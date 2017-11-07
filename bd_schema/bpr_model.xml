@@ -1,0 +1,4931 @@
+<?xml version="1.0"?>
+<esri:Workspace xmlns:esri="http://www.esri.com/schemas/ArcGIS/10.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<WorkspaceDefinition xsi:type="esri:WorkspaceDefinition">
+		<WorkspaceType>esriRemoteDatabaseWorkspace</WorkspaceType>
+		<Version/>
+		<Domains xsi:type="esri:ArrayOfDomain">
+			<Domain xsi:type="esri:CodedValueDomain">
+				<DomainName>ClaseHidrografia</DomainName>
+				<CodedValues xsi:type="esri:ArrayOfCodedValue">
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Jagüey</Name>
+						<Code xsi:type="xs:string">Jagüey</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Laguna</Name>
+						<Code xsi:type="xs:string">Laguna</Code>
+					</CodedValue>
+				</CodedValues>
+				<Description>Clases para Hidrografia</Description>
+				<FieldType>esriFieldTypeString</FieldType>
+				<MergePolicy>esriMPTDefaultValue</MergePolicy>
+				<SplitPolicy>esriSPTDuplicate</SplitPolicy>
+			</Domain>
+			<Domain xsi:type="esri:CodedValueDomain">
+				<DomainName>ClaseConstruccion</DomainName>
+				<CodedValues xsi:type="esri:ArrayOfCodedValue">
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Equipamiento</Name>
+						<Code xsi:type="xs:string">equipamiento</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Puente</Name>
+						<Code xsi:type="xs:string">puente</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Vivienda</Name>
+						<Code xsi:type="xs:string">vivienda</Code>
+					</CodedValue>
+				</CodedValues>
+				<Description>Clases para Construccion</Description>
+				<FieldType>esriFieldTypeString</FieldType>
+				<MergePolicy>esriMPTDefaultValue</MergePolicy>
+				<SplitPolicy>esriSPTDefaultValue</SplitPolicy>
+			</Domain>
+			<Domain xsi:type="esri:CodedValueDomain">
+				<DomainName>MosaicCatalogItemCategoryDomain</DomainName>
+				<CodedValues xsi:type="esri:ArrayOfCodedValue">
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Custom</Name>
+						<Code xsi:type="xs:int">255</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Incomplete</Name>
+						<Code xsi:type="xs:int">254</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Overview</Name>
+						<Code xsi:type="xs:int">2</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Partial Overview</Name>
+						<Code xsi:type="xs:int">4</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Primary</Name>
+						<Code xsi:type="xs:int">1</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Unknown</Name>
+						<Code xsi:type="xs:int">0</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Unprocessed Overview</Name>
+						<Code xsi:type="xs:int">3</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Uploaded</Name>
+						<Code xsi:type="xs:int">253</Code>
+					</CodedValue>
+				</CodedValues>
+				<Description>Catalog item categories.</Description>
+				<FieldType>esriFieldTypeInteger</FieldType>
+				<MergePolicy>esriMPTDefaultValue</MergePolicy>
+				<SplitPolicy>esriSPTDefaultValue</SplitPolicy>
+			</Domain>
+			<Domain xsi:type="esri:CodedValueDomain">
+				<DomainName>ClaseVias</DomainName>
+				<CodedValues xsi:type="esri:ArrayOfCodedValue">
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Primer Orden</Name>
+						<Code xsi:type="xs:string">primaria</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Segundo Orden</Name>
+						<Code xsi:type="xs:string">secundaria</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Tercer Orden</Name>
+						<Code xsi:type="xs:string">terciaria</Code>
+					</CodedValue>
+				</CodedValues>
+				<Description>Clases para Vias</Description>
+				<FieldType>esriFieldTypeString</FieldType>
+				<MergePolicy>esriMPTDefaultValue</MergePolicy>
+				<SplitPolicy>esriSPTDefaultValue</SplitPolicy>
+			</Domain>
+			<Domain xsi:type="esri:CodedValueDomain">
+				<DomainName>ClaseTenencia</DomainName>
+				<CodedValues xsi:type="esri:ArrayOfCodedValue">
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>POSEEDOR</Name>
+						<Code xsi:type="xs:string">Poseedor</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>PROPIETARIO</Name>
+						<Code xsi:type="xs:string">Propietario</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>TENEDOR</Name>
+						<Code xsi:type="xs:string">Tenedor</Code>
+					</CodedValue>
+				</CodedValues>
+				<Description>Clase dTenencia</Description>
+				<FieldType>esriFieldTypeString</FieldType>
+				<MergePolicy>esriMPTDefaultValue</MergePolicy>
+				<SplitPolicy>esriSPTDefaultValue</SplitPolicy>
+			</Domain>
+			<Domain xsi:type="esri:CodedValueDomain">
+				<DomainName>ClaseTipoDoc</DomainName>
+				<CodedValues xsi:type="esri:ArrayOfCodedValue">
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Cedula de Ciudadania</Name>
+						<Code xsi:type="xs:string">cc</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Cedula de Extranjeria</Name>
+						<Code xsi:type="xs:string">ce</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>NIT</Name>
+						<Code xsi:type="xs:string">nit</Code>
+					</CodedValue>
+					<CodedValue xsi:type="esri:CodedValue">
+						<Name>Tarjeta de Identidad</Name>
+						<Code xsi:type="xs:string">ti</Code>
+					</CodedValue>
+				</CodedValues>
+				<Description>Clase para tipos de documento</Description>
+				<FieldType>esriFieldTypeString</FieldType>
+				<MergePolicy>esriMPTDefaultValue</MergePolicy>
+				<SplitPolicy>esriSPTDefaultValue</SplitPolicy>
+			</Domain>
+		</Domains>
+		<DatasetDefinitions xsi:type="esri:ArrayOfDataElement">
+			<DataElement xsi:type="esri:DEFeatureDataset">
+				<CatalogPath>/FD=gdb_bpr.sde.Catastro</CatalogPath>
+				<Name>gdb_bpr.sde.Catastro</Name>
+				<DatasetType>esriDTFeatureDataset</DatasetType>
+				<Children xsi:type="esri:ArrayOfDataElement">
+					<DataElement xsi:type="esri:DEFeatureClass">
+						<CatalogPath>/FD=gdb_bpr.sde.Catastro/FC=gdb_bpr.sde.Construccion</CatalogPath>
+						<Name>gdb_bpr.sde.Construccion</Name>
+						<DatasetType>esriDTFeatureClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField">
+								<Field xsi:type="esri:Field">
+									<Name>objectid</Name>
+									<Type>esriFieldTypeOID</Type>
+									<AliasName>OBJECTID</AliasName>
+									<DomainFixed>true</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>4</Length>
+									<ModelName>objectid</ModelName>
+									<Precision>10</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>shape</Name>
+									<Type>esriFieldTypeGeometry</Type>
+									<AliasName/>
+									<DomainFixed>true</DomainFixed>
+									<Editable>true</Editable>
+									<GeometryDef xsi:type="esri:GeometryDef">
+										<AvgNumPoints>0</AvgNumPoints>
+										<HasM>false</HasM>
+										<HasZ>false</HasZ>
+										<GridSize0>-2</GridSize0>
+										<GeometryType>esriGeometryPolygon</GeometryType>
+										<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+											<HighPrecision>true</HighPrecision>
+											<LeftLongitude>-180</LeftLongitude>
+											<MOrigin>-100000</MOrigin>
+											<MScale>10000</MScale>
+											<MTolerance>0.001</MTolerance>
+											<WKID>4686</WKID>
+											<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+											<XOrigin>-400</XOrigin>
+											<XYScale>999999999.99999988</XYScale>
+											<XYTolerance>8.98315284119521e-009</XYTolerance>
+											<YOrigin>-400</YOrigin>
+											<ZOrigin>-100000</ZOrigin>
+											<ZScale>10000</ZScale>
+											<ZTolerance>0.001</ZTolerance>
+										</SpatialReference>
+									</GeometryDef>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>shape</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>a_m2</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>Area M2</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>apredio_ha</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>cod</Name>
+									<Type>esriFieldTypeInteger</Type>
+									<AliasName>Codigo Construccion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>16</Length>
+									<ModelName>codkpre</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>fechaactu</Name>
+									<Type>esriFieldTypeDate</Type>
+									<AliasName>Fecha Actualizacion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>fechaactu</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_area(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_area(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_length(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_length(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+							</FieldArray>
+						</Fields>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex">
+								<Index xsi:type="esri:Index">
+									<Name>a29_ix1</Name>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>shape</Name>
+												<Type>esriFieldTypeGeometry</Type>
+												<AliasName/>
+												<DomainFixed>true</DomainFixed>
+												<Editable>true</Editable>
+												<GeometryDef xsi:type="esri:GeometryDef">
+													<AvgNumPoints>0</AvgNumPoints>
+													<HasM>false</HasM>
+													<HasZ>false</HasZ>
+													<GridSize0>-2</GridSize0>
+													<GeometryType>esriGeometryPolygon</GeometryType>
+													<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+														<HighPrecision>true</HighPrecision>
+														<LeftLongitude>-180</LeftLongitude>
+														<MOrigin>-100000</MOrigin>
+														<MScale>10000</MScale>
+														<MTolerance>0.001</MTolerance>
+														<WKID>4686</WKID>
+														<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+														<XOrigin>-400</XOrigin>
+														<XYScale>999999999.99999988</XYScale>
+														<XYTolerance>8.98315284119521e-009</XYTolerance>
+														<YOrigin>-400</YOrigin>
+														<ZOrigin>-100000</ZOrigin>
+														<ZScale>10000</ZScale>
+														<ZTolerance>0.001</ZTolerance>
+													</SpatialReference>
+												</GeometryDef>
+												<IsNullable>true</IsNullable>
+												<Length>4</Length>
+												<ModelName>shape</ModelName>
+												<Precision>0</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>gdb_419_cod_kpre</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField"/>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>false</IsUnique>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>gdb_419_codkpre</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>cod</Name>
+												<Type>esriFieldTypeInteger</Type>
+												<AliasName>Codigo Construccion</AliasName>
+												<DomainFixed>false</DomainFixed>
+												<Editable>true</Editable>
+												<IsNullable>true</IsNullable>
+												<Length>16</Length>
+												<ModelName>codkpre</ModelName>
+												<Precision>0</Precision>
+												<Required>false</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>false</IsUnique>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>r37_sde_rowid_uk</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>objectid</Name>
+												<Type>esriFieldTypeOID</Type>
+												<AliasName>OBJECTID</AliasName>
+												<DomainFixed>true</DomainFixed>
+												<Editable>false</Editable>
+												<IsNullable>false</IsNullable>
+												<Length>4</Length>
+												<ModelName>objectid</ModelName>
+												<Precision>10</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+								</Index>
+							</IndexArray>
+						</Indexes>
+						<AliasName>Predio</AliasName>
+						<CLSID>{52353152-891A-11D0-BEC6-00805F7C4268}</CLSID>
+						<ShapeType>esriGeometryPolygon</ShapeType>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<RelationshipClassNames xsi:type="esri:Names">
+							<Name>gdb_moscal.sde.KPre_Conect</Name>
+							<Name>gdb_moscal.sde.KPre_Def</Name>
+							<Name>gdb_moscal.sde.KPre_Cob</Name>
+							<Name>gdb_bpr.sde.Const_Pred</Name>
+							<Name>gdb_moscal.sde.KPre_BNB</Name>
+						</RelationshipClassNames>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Extent xsi:type="esri:EnvelopeN">
+							<XMin>NaN</XMin>
+							<YMin>NaN</YMin>
+							<XMax>NaN</XMax>
+							<YMax>NaN</YMax>
+							<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+								<HighPrecision>true</HighPrecision>
+								<LeftLongitude>-180</LeftLongitude>
+								<MOrigin>-100000</MOrigin>
+								<MScale>10000</MScale>
+								<MTolerance>0.001</MTolerance>
+								<WKID>4686</WKID>
+								<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+								<XOrigin>-400</XOrigin>
+								<XYScale>999999999.99999988</XYScale>
+								<XYTolerance>8.98315284119521e-009</XYTolerance>
+								<YOrigin>-400</YOrigin>
+								<ZOrigin>-100000</ZOrigin>
+								<ZScale>10000</ZScale>
+								<ZTolerance>0.001</ZTolerance>
+							</SpatialReference>
+						</Extent>
+						<AreaFieldName>st_area(shape)</AreaFieldName>
+						<CanVersion>true</CanVersion>
+						<DSID>419</DSID>
+						<FeatureType>esriFTSimple</FeatureType>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<HasM>false</HasM>
+						<HasSpatialIndex>true</HasSpatialIndex>
+						<HasZ>false</HasZ>
+						<LengthFieldName>st_length(shape)</LengthFieldName>
+						<ModelName/>
+						<HasOID>true</HasOID>
+						<OIDFieldName>objectid</OIDFieldName>
+						<RasterFieldName/>
+						<ShapeFieldName>shape</ShapeFieldName>
+						<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+							<HighPrecision>true</HighPrecision>
+							<LeftLongitude>-180</LeftLongitude>
+							<MOrigin>-100000</MOrigin>
+							<MScale>10000</MScale>
+							<MTolerance>0.001</MTolerance>
+							<WKID>4686</WKID>
+							<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+							<XOrigin>-400</XOrigin>
+							<XYScale>999999999.99999988</XYScale>
+							<XYTolerance>8.98315284119521e-009</XYTolerance>
+							<YOrigin>-400</YOrigin>
+							<ZOrigin>-100000</ZOrigin>
+							<ZScale>10000</ZScale>
+							<ZTolerance>0.001</ZTolerance>
+						</SpatialReference>
+						<Versioned>false</Versioned>
+					</DataElement>
+					<DataElement xsi:type="esri:DEFeatureClass">
+						<CatalogPath>/FD=gdb_bpr.sde.Catastro/FC=gdb_bpr.sde.Manzanas</CatalogPath>
+						<Name>gdb_bpr.sde.Manzanas</Name>
+						<DatasetType>esriDTFeatureClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField">
+								<Field xsi:type="esri:Field">
+									<Name>objectid</Name>
+									<Type>esriFieldTypeOID</Type>
+									<AliasName>OBJECTID</AliasName>
+									<DomainFixed>true</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>4</Length>
+									<ModelName>objectid</ModelName>
+									<Precision>10</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>shape</Name>
+									<Type>esriFieldTypeGeometry</Type>
+									<AliasName/>
+									<DomainFixed>true</DomainFixed>
+									<Editable>true</Editable>
+									<GeometryDef xsi:type="esri:GeometryDef">
+										<AvgNumPoints>0</AvgNumPoints>
+										<HasM>false</HasM>
+										<HasZ>false</HasZ>
+										<GridSize0>-2</GridSize0>
+										<GeometryType>esriGeometryPolygon</GeometryType>
+										<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+											<HighPrecision>true</HighPrecision>
+											<LeftLongitude>-180</LeftLongitude>
+											<MOrigin>-100000</MOrigin>
+											<MScale>10000</MScale>
+											<MTolerance>0.001</MTolerance>
+											<WKID>4686</WKID>
+											<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+											<XOrigin>-400</XOrigin>
+											<XYScale>999999999.99999988</XYScale>
+											<XYTolerance>8.98315284119521e-009</XYTolerance>
+											<YOrigin>-400</YOrigin>
+											<ZOrigin>-100000</ZOrigin>
+											<ZScale>10000</ZScale>
+											<ZTolerance>0.001</ZTolerance>
+										</SpatialReference>
+									</GeometryDef>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>shape</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>a_manz</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>Area Manzana</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>totveredas</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>cod_ag</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Asociacion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>5</Length>
+									<ModelName>codaso</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>fechaactu</Name>
+									<Type>esriFieldTypeDate</Type>
+									<AliasName>Fecha Actualizacion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>FechaActu</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_area(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>st_area</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_area(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_length(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>st_length</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_length(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+							</FieldArray>
+						</Fields>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex">
+								<Index xsi:type="esri:Index">
+									<Name>a27_ix1</Name>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>shape</Name>
+												<Type>esriFieldTypeGeometry</Type>
+												<AliasName/>
+												<DomainFixed>true</DomainFixed>
+												<Editable>true</Editable>
+												<GeometryDef xsi:type="esri:GeometryDef">
+													<AvgNumPoints>0</AvgNumPoints>
+													<HasM>false</HasM>
+													<HasZ>false</HasZ>
+													<GridSize0>-2</GridSize0>
+													<GeometryType>esriGeometryPolygon</GeometryType>
+													<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+														<HighPrecision>true</HighPrecision>
+														<LeftLongitude>-180</LeftLongitude>
+														<MOrigin>-100000</MOrigin>
+														<MScale>10000</MScale>
+														<MTolerance>0.001</MTolerance>
+														<WKID>4686</WKID>
+														<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+														<XOrigin>-400</XOrigin>
+														<XYScale>999999999.99999988</XYScale>
+														<XYTolerance>8.98315284119521e-009</XYTolerance>
+														<YOrigin>-400</YOrigin>
+														<ZOrigin>-100000</ZOrigin>
+														<ZScale>10000</ZScale>
+														<ZTolerance>0.001</ZTolerance>
+													</SpatialReference>
+												</GeometryDef>
+												<IsNullable>true</IsNullable>
+												<Length>4</Length>
+												<ModelName>shape</ModelName>
+												<Precision>0</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>gdb_417_cod_ag</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>cod_ag</Name>
+												<Type>esriFieldTypeString</Type>
+												<AliasName>Codigo Asociacion</AliasName>
+												<DomainFixed>false</DomainFixed>
+												<Editable>true</Editable>
+												<IsNullable>true</IsNullable>
+												<Length>5</Length>
+												<ModelName>codaso</ModelName>
+												<Precision>0</Precision>
+												<Required>false</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>false</IsUnique>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>r35_sde_rowid_uk</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>objectid</Name>
+												<Type>esriFieldTypeOID</Type>
+												<AliasName>OBJECTID</AliasName>
+												<DomainFixed>true</DomainFixed>
+												<Editable>false</Editable>
+												<IsNullable>false</IsNullable>
+												<Length>4</Length>
+												<ModelName>objectid</ModelName>
+												<Precision>10</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+								</Index>
+							</IndexArray>
+						</Indexes>
+						<AliasName>Asociacion</AliasName>
+						<CLSID>{52353152-891A-11D0-BEC6-00805F7C4268}</CLSID>
+						<ShapeType>esriGeometryPolygon</ShapeType>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<RelationshipClassNames xsi:type="esri:Names">
+							<Name>gdb_bpr.sde.Manz_agPob</Name>
+							<Name>gdb_bpr.sde.Manz_Pred</Name>
+						</RelationshipClassNames>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Extent xsi:type="esri:EnvelopeN">
+							<XMin>NaN</XMin>
+							<YMin>NaN</YMin>
+							<XMax>NaN</XMax>
+							<YMax>NaN</YMax>
+							<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+								<HighPrecision>true</HighPrecision>
+								<LeftLongitude>-180</LeftLongitude>
+								<MOrigin>-100000</MOrigin>
+								<MScale>10000</MScale>
+								<MTolerance>0.001</MTolerance>
+								<WKID>4686</WKID>
+								<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+								<XOrigin>-400</XOrigin>
+								<XYScale>999999999.99999988</XYScale>
+								<XYTolerance>8.98315284119521e-009</XYTolerance>
+								<YOrigin>-400</YOrigin>
+								<ZOrigin>-100000</ZOrigin>
+								<ZScale>10000</ZScale>
+								<ZTolerance>0.001</ZTolerance>
+							</SpatialReference>
+						</Extent>
+						<AreaFieldName>st_area(shape)</AreaFieldName>
+						<CanVersion>true</CanVersion>
+						<DSID>417</DSID>
+						<FeatureType>esriFTSimple</FeatureType>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<HasM>false</HasM>
+						<HasSpatialIndex>true</HasSpatialIndex>
+						<HasZ>false</HasZ>
+						<LengthFieldName>st_length(shape)</LengthFieldName>
+						<ModelName/>
+						<HasOID>true</HasOID>
+						<OIDFieldName>objectid</OIDFieldName>
+						<RasterFieldName/>
+						<ShapeFieldName>shape</ShapeFieldName>
+						<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+							<HighPrecision>true</HighPrecision>
+							<LeftLongitude>-180</LeftLongitude>
+							<MOrigin>-100000</MOrigin>
+							<MScale>10000</MScale>
+							<MTolerance>0.001</MTolerance>
+							<WKID>4686</WKID>
+							<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+							<XOrigin>-400</XOrigin>
+							<XYScale>999999999.99999988</XYScale>
+							<XYTolerance>8.98315284119521e-009</XYTolerance>
+							<YOrigin>-400</YOrigin>
+							<ZOrigin>-100000</ZOrigin>
+							<ZScale>10000</ZScale>
+							<ZTolerance>0.001</ZTolerance>
+						</SpatialReference>
+						<Versioned>false</Versioned>
+					</DataElement>
+					<DataElement xsi:type="esri:DEFeatureClass">
+						<CatalogPath>/FD=gdb_bpr.sde.Catastro/FC=gdb_bpr.sde.Predio</CatalogPath>
+						<Name>gdb_bpr.sde.Predio</Name>
+						<DatasetType>esriDTFeatureClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField">
+								<Field xsi:type="esri:Field">
+									<Name>objectid</Name>
+									<Type>esriFieldTypeOID</Type>
+									<AliasName>OBJECTID</AliasName>
+									<DomainFixed>true</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>4</Length>
+									<ModelName>objectid</ModelName>
+									<Precision>10</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>shape</Name>
+									<Type>esriFieldTypeGeometry</Type>
+									<AliasName/>
+									<DomainFixed>true</DomainFixed>
+									<Editable>true</Editable>
+									<GeometryDef xsi:type="esri:GeometryDef">
+										<AvgNumPoints>0</AvgNumPoints>
+										<HasM>false</HasM>
+										<HasZ>false</HasZ>
+										<GridSize0>-2</GridSize0>
+										<GeometryType>esriGeometryPolygon</GeometryType>
+										<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+											<HighPrecision>true</HighPrecision>
+											<LeftLongitude>-180</LeftLongitude>
+											<MOrigin>-100000</MOrigin>
+											<MScale>10000</MScale>
+											<MTolerance>0.001</MTolerance>
+											<WKID>4686</WKID>
+											<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+											<XOrigin>-400</XOrigin>
+											<XYScale>999999999.99999988</XYScale>
+											<XYTolerance>8.98315284119521e-009</XYTolerance>
+											<YOrigin>-400</YOrigin>
+											<ZOrigin>-100000</ZOrigin>
+											<ZScale>10000</ZScale>
+											<ZTolerance>0.001</ZTolerance>
+										</SpatialReference>
+									</GeometryDef>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>shape</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>cod_ag</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Manz</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>11</Length>
+									<ModelName>codver</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>cod_kpre</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Predio</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>11</Length>
+									<ModelName>codver</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>fechaactu</Name>
+									<Type>esriFieldTypeDate</Type>
+									<AliasName>Fecha Actualizacion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>fechaactu</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_area(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_area(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_length(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_length(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+							</FieldArray>
+						</Fields>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex">
+								<Index xsi:type="esri:Index">
+									<Name>a28_ix1</Name>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>shape</Name>
+												<Type>esriFieldTypeGeometry</Type>
+												<AliasName/>
+												<DomainFixed>true</DomainFixed>
+												<Editable>true</Editable>
+												<GeometryDef xsi:type="esri:GeometryDef">
+													<AvgNumPoints>0</AvgNumPoints>
+													<HasM>false</HasM>
+													<HasZ>false</HasZ>
+													<GridSize0>-2</GridSize0>
+													<GeometryType>esriGeometryPolygon</GeometryType>
+													<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+														<HighPrecision>true</HighPrecision>
+														<LeftLongitude>-180</LeftLongitude>
+														<MOrigin>-100000</MOrigin>
+														<MScale>10000</MScale>
+														<MTolerance>0.001</MTolerance>
+														<WKID>4686</WKID>
+														<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+														<XOrigin>-400</XOrigin>
+														<XYScale>999999999.99999988</XYScale>
+														<XYTolerance>8.98315284119521e-009</XYTolerance>
+														<YOrigin>-400</YOrigin>
+														<ZOrigin>-100000</ZOrigin>
+														<ZScale>10000</ZScale>
+														<ZTolerance>0.001</ZTolerance>
+													</SpatialReference>
+												</GeometryDef>
+												<IsNullable>true</IsNullable>
+												<Length>4</Length>
+												<ModelName>shape</ModelName>
+												<Precision>0</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>gdb_418_cod_kpre</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>cod_kpre</Name>
+												<Type>esriFieldTypeString</Type>
+												<AliasName>Codigo Predio</AliasName>
+												<DomainFixed>false</DomainFixed>
+												<Editable>true</Editable>
+												<IsNullable>true</IsNullable>
+												<Length>11</Length>
+												<ModelName>codver</ModelName>
+												<Precision>0</Precision>
+												<Required>false</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>false</IsUnique>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>r36_sde_rowid_uk</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>objectid</Name>
+												<Type>esriFieldTypeOID</Type>
+												<AliasName>OBJECTID</AliasName>
+												<DomainFixed>true</DomainFixed>
+												<Editable>false</Editable>
+												<IsNullable>false</IsNullable>
+												<Length>4</Length>
+												<ModelName>objectid</ModelName>
+												<Precision>10</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+								</Index>
+							</IndexArray>
+						</Indexes>
+						<AliasName>Vereda</AliasName>
+						<CLSID>{52353152-891A-11D0-BEC6-00805F7C4268}</CLSID>
+						<ShapeType>esriGeometryPolygon</ShapeType>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<RelationshipClassNames xsi:type="esri:Names">
+							<Name>gdb_bpr.sde.Pred_infoPred</Name>
+							<Name>gdb_bpr.sde.Manz_Pred</Name>
+							<Name>gdb_bpr.sde.Const_Pred</Name>
+						</RelationshipClassNames>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Extent xsi:type="esri:EnvelopeN">
+							<XMin>NaN</XMin>
+							<YMin>NaN</YMin>
+							<XMax>NaN</XMax>
+							<YMax>NaN</YMax>
+							<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+								<HighPrecision>true</HighPrecision>
+								<LeftLongitude>-180</LeftLongitude>
+								<MOrigin>-100000</MOrigin>
+								<MScale>10000</MScale>
+								<MTolerance>0.001</MTolerance>
+								<WKID>4686</WKID>
+								<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+								<XOrigin>-400</XOrigin>
+								<XYScale>999999999.99999988</XYScale>
+								<XYTolerance>8.98315284119521e-009</XYTolerance>
+								<YOrigin>-400</YOrigin>
+								<ZOrigin>-100000</ZOrigin>
+								<ZScale>10000</ZScale>
+								<ZTolerance>0.001</ZTolerance>
+							</SpatialReference>
+						</Extent>
+						<AreaFieldName>st_area(shape)</AreaFieldName>
+						<CanVersion>true</CanVersion>
+						<DSID>418</DSID>
+						<FeatureType>esriFTSimple</FeatureType>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<HasM>false</HasM>
+						<HasSpatialIndex>true</HasSpatialIndex>
+						<HasZ>false</HasZ>
+						<LengthFieldName>st_length(shape)</LengthFieldName>
+						<ModelName/>
+						<HasOID>true</HasOID>
+						<OIDFieldName>objectid</OIDFieldName>
+						<RasterFieldName/>
+						<ShapeFieldName>shape</ShapeFieldName>
+						<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+							<HighPrecision>true</HighPrecision>
+							<LeftLongitude>-180</LeftLongitude>
+							<MOrigin>-100000</MOrigin>
+							<MScale>10000</MScale>
+							<MTolerance>0.001</MTolerance>
+							<WKID>4686</WKID>
+							<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+							<XOrigin>-400</XOrigin>
+							<XYScale>999999999.99999988</XYScale>
+							<XYTolerance>8.98315284119521e-009</XYTolerance>
+							<YOrigin>-400</YOrigin>
+							<ZOrigin>-100000</ZOrigin>
+							<ZScale>10000</ZScale>
+							<ZTolerance>0.001</ZTolerance>
+						</SpatialReference>
+						<Versioned>false</Versioned>
+					</DataElement>
+					<DataElement xsi:type="esri:DERelationshipClass">
+						<CatalogPath>/FD=gdb_bpr.sde.Catastro/RC=gdb_bpr.sde.Manz_agPob</CatalogPath>
+						<Name>gdb_bpr.sde.Manz_agPob</Name>
+						<AliasName/>
+						<DatasetType>esriDTRelationshipClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField"/>
+						</Fields>
+						<IsAttributed>false</IsAttributed>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex"/>
+						</Indexes>
+						<RelationshipClassNames xsi:type="esri:Names"/>
+						<CLSID/>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Cardinality>esriRelCardinalityOneToOne</Cardinality>
+						<ForwardPathLabel>cod_ag</ForwardPathLabel>
+						<BackwardPathLabel>cod_ag</BackwardPathLabel>
+						<OriginClassNames xsi:type="esri:Names">
+							<Name>gdb_bpr.sde.Manzanas</Name>
+						</OriginClassNames>
+						<DestinationClassNames xsi:type="esri:Names">
+							<Name>gdb_bpr.sde.DivisionGeografica</Name>
+						</DestinationClassNames>
+						<OriginClassKeys xsi:type="esri:ArrayOfRelationshipClassKey">
+							<RelationshipClassKey xsi:type="esri:RelationshipClassKey">
+								<ObjectKeyName>cod_ag</ObjectKeyName>
+								<ClassKeyName/>
+								<KeyRole>esriRelKeyRoleOriginForeign</KeyRole>
+							</RelationshipClassKey>
+							<RelationshipClassKey xsi:type="esri:RelationshipClassKey">
+								<ObjectKeyName>cod</ObjectKeyName>
+								<ClassKeyName/>
+								<KeyRole>esriRelKeyRoleOriginPrimary</KeyRole>
+							</RelationshipClassKey>
+						</OriginClassKeys>
+						<DSID>-1</DSID>
+						<ModelName/>
+						<Notification>esriRelNotificationNone</Notification>
+						<RasterFieldName/>
+						<KeyType>esriRelKeyTypeSingle</KeyType>
+						<OIDFieldName>OBJECTID</OIDFieldName>
+						<HasOID>true</HasOID>
+						<Versioned>false</Versioned>
+						<IsReflexive>false</IsReflexive>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<CanVersion>true</CanVersion>
+						<ClassKey>esriRelClassKeyUndefined</ClassKey>
+						<IsComposite>false</IsComposite>
+						<RelationshipRules xsi:type="esri:ArrayOfRelationshipRule"/>
+					</DataElement>
+					<DataElement xsi:type="esri:DERelationshipClass">
+						<CatalogPath>/FD=gdb_bpr.sde.Catastro/RC=gdb_bpr.sde.Pred_infoPred</CatalogPath>
+						<Name>gdb_bpr.sde.Pred_infoPred</Name>
+						<AliasName/>
+						<DatasetType>esriDTRelationshipClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField"/>
+						</Fields>
+						<IsAttributed>false</IsAttributed>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex"/>
+						</Indexes>
+						<RelationshipClassNames xsi:type="esri:Names"/>
+						<CLSID/>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Cardinality>esriRelCardinalityOneToOne</Cardinality>
+						<ForwardPathLabel>cod_kpre</ForwardPathLabel>
+						<BackwardPathLabel>codkpre</BackwardPathLabel>
+						<OriginClassNames xsi:type="esri:Names">
+							<Name>gdb_bpr.sde.Predio</Name>
+						</OriginClassNames>
+						<DestinationClassNames xsi:type="esri:Names">
+							<Name>gdb_bpr.sde.infoPredio</Name>
+						</DestinationClassNames>
+						<OriginClassKeys xsi:type="esri:ArrayOfRelationshipClassKey">
+							<RelationshipClassKey xsi:type="esri:RelationshipClassKey">
+								<ObjectKeyName>codkpre</ObjectKeyName>
+								<ClassKeyName/>
+								<KeyRole>esriRelKeyRoleOriginForeign</KeyRole>
+							</RelationshipClassKey>
+							<RelationshipClassKey xsi:type="esri:RelationshipClassKey">
+								<ObjectKeyName>cod</ObjectKeyName>
+								<ClassKeyName/>
+								<KeyRole>esriRelKeyRoleOriginPrimary</KeyRole>
+							</RelationshipClassKey>
+						</OriginClassKeys>
+						<DSID>-1</DSID>
+						<ModelName/>
+						<Notification>esriRelNotificationNone</Notification>
+						<RasterFieldName/>
+						<KeyType>esriRelKeyTypeSingle</KeyType>
+						<OIDFieldName>OBJECTID</OIDFieldName>
+						<HasOID>true</HasOID>
+						<Versioned>false</Versioned>
+						<IsReflexive>false</IsReflexive>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<CanVersion>true</CanVersion>
+						<ClassKey>esriRelClassKeyUndefined</ClassKey>
+						<IsComposite>false</IsComposite>
+						<RelationshipRules xsi:type="esri:ArrayOfRelationshipRule"/>
+					</DataElement>
+					<DataElement xsi:type="esri:DERelationshipClass">
+						<CatalogPath>/FD=gdb_bpr.sde.Catastro/RC=gdb_moscal.sde.KPre_Def</CatalogPath>
+						<Name>gdb_moscal.sde.KPre_Def</Name>
+						<AliasName/>
+						<DatasetType>esriDTRelationshipClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField"/>
+						</Fields>
+						<IsAttributed>false</IsAttributed>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex"/>
+						</Indexes>
+						<RelationshipClassNames xsi:type="esri:Names"/>
+						<CLSID/>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Cardinality>esriRelCardinalityOneToOne</Cardinality>
+						<ForwardPathLabel>Tamanodeforestpredio</ForwardPathLabel>
+						<BackwardPathLabel>KPre2017</BackwardPathLabel>
+						<OriginClassNames xsi:type="esri:Names">
+							<Name>gdb_bpr.sde.Construccion</Name>
+						</OriginClassNames>
+						<DestinationClassNames xsi:type="esri:Names">
+							<Name>gdb_bpr.sde.consCaracteristicas</Name>
+						</DestinationClassNames>
+						<OriginClassKeys xsi:type="esri:ArrayOfRelationshipClassKey">
+							<RelationshipClassKey xsi:type="esri:RelationshipClassKey">
+								<ObjectKeyName>codkpre</ObjectKeyName>
+								<ClassKeyName/>
+								<KeyRole>esriRelKeyRoleOriginForeign</KeyRole>
+							</RelationshipClassKey>
+							<RelationshipClassKey xsi:type="esri:RelationshipClassKey">
+								<ObjectKeyName>cod</ObjectKeyName>
+								<ClassKeyName/>
+								<KeyRole>esriRelKeyRoleOriginPrimary</KeyRole>
+							</RelationshipClassKey>
+						</OriginClassKeys>
+						<DSID>-1</DSID>
+						<ModelName/>
+						<Notification>esriRelNotificationNone</Notification>
+						<RasterFieldName/>
+						<KeyType>esriRelKeyTypeSingle</KeyType>
+						<OIDFieldName>OBJECTID</OIDFieldName>
+						<HasOID>true</HasOID>
+						<Versioned>false</Versioned>
+						<IsReflexive>false</IsReflexive>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<CanVersion>true</CanVersion>
+						<ClassKey>esriRelClassKeyUndefined</ClassKey>
+						<IsComposite>false</IsComposite>
+						<RelationshipRules xsi:type="esri:ArrayOfRelationshipRule"/>
+					</DataElement>
+					<DataElement xsi:type="esri:DERelationshipClass">
+						<CatalogPath>/FD=gdb_bpr.sde.Catastro/RC=gdb_bpr.sde.Manz_Pred</CatalogPath>
+						<Name>gdb_bpr.sde.Manz_Pred</Name>
+						<AliasName/>
+						<DatasetType>esriDTRelationshipClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField"/>
+						</Fields>
+						<IsAttributed>false</IsAttributed>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex"/>
+						</Indexes>
+						<RelationshipClassNames xsi:type="esri:Names"/>
+						<CLSID/>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Cardinality>esriRelCardinalityOneToMany</Cardinality>
+						<ForwardPathLabel>cod_ag</ForwardPathLabel>
+						<BackwardPathLabel>cod_ag</BackwardPathLabel>
+						<OriginClassNames xsi:type="esri:Names">
+							<Name>gdb_bpr.sde.Manzanas</Name>
+						</OriginClassNames>
+						<DestinationClassNames xsi:type="esri:Names">
+							<Name>gdb_bpr.sde.Predio</Name>
+						</DestinationClassNames>
+						<OriginClassKeys xsi:type="esri:ArrayOfRelationshipClassKey">
+							<RelationshipClassKey xsi:type="esri:RelationshipClassKey">
+								<ObjectKeyName>cod_ag</ObjectKeyName>
+								<ClassKeyName/>
+								<KeyRole>esriRelKeyRoleOriginPrimary</KeyRole>
+							</RelationshipClassKey>
+						</OriginClassKeys>
+						<DSID>-1</DSID>
+						<ModelName/>
+						<Notification>esriRelNotificationBoth</Notification>
+						<RasterFieldName/>
+						<KeyType>esriRelKeyTypeSingle</KeyType>
+						<OIDFieldName>OBJECTID</OIDFieldName>
+						<HasOID>true</HasOID>
+						<Versioned>false</Versioned>
+						<IsReflexive>false</IsReflexive>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<CanVersion>true</CanVersion>
+						<ClassKey>esriRelClassKeyUndefined</ClassKey>
+						<IsComposite>false</IsComposite>
+						<RelationshipRules xsi:type="esri:ArrayOfRelationshipRule"/>
+					</DataElement>
+					<DataElement xsi:type="esri:DERelationshipClass">
+						<CatalogPath>/FD=gdb_bpr.sde.Catastro/RC=gdb_bpr.sde.Const_Pred</CatalogPath>
+						<Name>gdb_bpr.sde.Const_Pred</Name>
+						<AliasName/>
+						<DatasetType>esriDTRelationshipClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField"/>
+						</Fields>
+						<IsAttributed>false</IsAttributed>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex"/>
+						</Indexes>
+						<RelationshipClassNames xsi:type="esri:Names"/>
+						<CLSID/>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Cardinality>esriRelCardinalityOneToMany</Cardinality>
+						<ForwardPathLabel>cod_kpre</ForwardPathLabel>
+						<BackwardPathLabel>gdb_419_cod_kpre</BackwardPathLabel>
+						<OriginClassNames xsi:type="esri:Names">
+							<Name>gdb_bpr.sde.Predio</Name>
+						</OriginClassNames>
+						<DestinationClassNames xsi:type="esri:Names">
+							<Name>gdb_bpr.sde.Construccion</Name>
+						</DestinationClassNames>
+						<OriginClassKeys xsi:type="esri:ArrayOfRelationshipClassKey">
+							<RelationshipClassKey xsi:type="esri:RelationshipClassKey">
+								<ObjectKeyName>cod_kpre</ObjectKeyName>
+								<ClassKeyName/>
+								<KeyRole>esriRelKeyRoleOriginPrimary</KeyRole>
+							</RelationshipClassKey>
+						</OriginClassKeys>
+						<DSID>-1</DSID>
+						<ModelName/>
+						<Notification>esriRelNotificationBoth</Notification>
+						<RasterFieldName/>
+						<KeyType>esriRelKeyTypeSingle</KeyType>
+						<OIDFieldName>OBJECTID</OIDFieldName>
+						<HasOID>true</HasOID>
+						<Versioned>false</Versioned>
+						<IsReflexive>false</IsReflexive>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<CanVersion>true</CanVersion>
+						<ClassKey>esriRelClassKeyUndefined</ClassKey>
+						<IsComposite>false</IsComposite>
+						<RelationshipRules xsi:type="esri:ArrayOfRelationshipRule"/>
+					</DataElement>
+				</Children>
+				<Extent xsi:type="esri:EnvelopeN">
+					<XMin>NaN</XMin>
+					<YMin>NaN</YMin>
+					<XMax>NaN</XMax>
+					<YMax>NaN</YMax>
+					<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+						<HighPrecision>true</HighPrecision>
+						<LeftLongitude>-180</LeftLongitude>
+						<MOrigin>-100000</MOrigin>
+						<MScale>10000</MScale>
+						<MTolerance>0.001</MTolerance>
+						<WKID>4686</WKID>
+						<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+						<XOrigin>-400</XOrigin>
+						<XYScale>999999999.99999988</XYScale>
+						<XYTolerance>8.98315284119521e-009</XYTolerance>
+						<YOrigin>-400</YOrigin>
+						<ZOrigin>-100000</ZOrigin>
+						<ZScale>10000</ZScale>
+						<ZTolerance>0.001</ZTolerance>
+					</SpatialReference>
+				</Extent>
+				<CanVersion>true</CanVersion>
+				<DSID>5</DSID>
+				<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+					<HighPrecision>true</HighPrecision>
+					<LeftLongitude>-180</LeftLongitude>
+					<MOrigin>-100000</MOrigin>
+					<MScale>10000</MScale>
+					<MTolerance>0.001</MTolerance>
+					<WKID>4686</WKID>
+					<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+					<XOrigin>-400</XOrigin>
+					<XYScale>999999999.99999988</XYScale>
+					<XYTolerance>8.98315284119521e-009</XYTolerance>
+					<YOrigin>-400</YOrigin>
+					<ZOrigin>-100000</ZOrigin>
+					<ZScale>10000</ZScale>
+					<ZTolerance>0.001</ZTolerance>
+				</SpatialReference>
+				<Versioned>false</Versioned>
+			</DataElement>
+			<DataElement xsi:type="esri:DEFeatureDataset">
+				<CatalogPath>/FD=gdb_bpr.sde.Consultas</CatalogPath>
+				<Name>gdb_bpr.sde.Consultas</Name>
+				<DatasetType>esriDTFeatureDataset</DatasetType>
+				<Children xsi:type="esri:ArrayOfDataElement">
+					<DataElement xsi:type="esri:DEFeatureClass">
+						<CatalogPath>/FD=gdb_bpr.sde.Consultas/FC=gdb_bpr.sde.IPPV</CatalogPath>
+						<Name>gdb_bpr.sde.IPPV</Name>
+						<DatasetType>esriDTFeatureClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField">
+								<Field xsi:type="esri:Field">
+									<Name>objectid</Name>
+									<Type>esriFieldTypeOID</Type>
+									<AliasName>OBJECTID</AliasName>
+									<DomainFixed>true</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>4</Length>
+									<ModelName>objectid</ModelName>
+									<Precision>10</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>shape</Name>
+									<Type>esriFieldTypeGeometry</Type>
+									<AliasName/>
+									<DomainFixed>true</DomainFixed>
+									<Editable>true</Editable>
+									<GeometryDef xsi:type="esri:GeometryDef">
+										<AvgNumPoints>0</AvgNumPoints>
+										<HasM>false</HasM>
+										<HasZ>false</HasZ>
+										<GridSize0>-2</GridSize0>
+										<GeometryType>esriGeometryPoint</GeometryType>
+										<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+											<HighPrecision>true</HighPrecision>
+											<LeftLongitude>-180</LeftLongitude>
+											<MOrigin>-100000</MOrigin>
+											<MScale>10000</MScale>
+											<MTolerance>0.001</MTolerance>
+											<WKID>4686</WKID>
+											<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+											<XOrigin>-400</XOrigin>
+											<XYScale>999999999.99999988</XYScale>
+											<XYTolerance>8.98315284119521e-009</XYTolerance>
+											<YOrigin>-400</YOrigin>
+											<ZOrigin>-100000</ZOrigin>
+											<ZScale>10000</ZScale>
+											<ZTolerance>0.001</ZTolerance>
+										</SpatialReference>
+									</GeometryDef>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>shape</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>cod_aso</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Asociacion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>cod_aso</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>cod_ver</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Vereda</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>11</Length>
+									<ModelName>cod_ver</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codcar</Name>
+									<Type>esriFieldTypeInteger</Type>
+									<AliasName>Codigo Corporacion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>codcar</ModelName>
+									<Precision>10</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codkpre</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Predio</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>16</Length>
+									<ModelName>codkpre</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>fechaactu</Name>
+									<Type>esriFieldTypeDate</Type>
+									<AliasName>Fecha Actualizacion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>fechaactu</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>fechaevento</Name>
+									<Type>esriFieldTypeDate</Type>
+									<AliasName>FechaEvento</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>fechaevento</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>idalerideam</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Alertas IDEAM</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>idalerideam</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>nompredio</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Nombre Predio</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>250</Length>
+									<ModelName>nompredio</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>observacion</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Observaciones</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>250</Length>
+									<ModelName>observacion</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+							</FieldArray>
+						</Fields>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex">
+								<Index xsi:type="esri:Index">
+									<Name>a35_ix1</Name>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>shape</Name>
+												<Type>esriFieldTypeGeometry</Type>
+												<AliasName/>
+												<DomainFixed>true</DomainFixed>
+												<Editable>true</Editable>
+												<GeometryDef xsi:type="esri:GeometryDef">
+													<AvgNumPoints>0</AvgNumPoints>
+													<HasM>false</HasM>
+													<HasZ>false</HasZ>
+													<GridSize0>-2</GridSize0>
+													<GeometryType>esriGeometryPoint</GeometryType>
+													<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+														<HighPrecision>true</HighPrecision>
+														<LeftLongitude>-180</LeftLongitude>
+														<MOrigin>-100000</MOrigin>
+														<MScale>10000</MScale>
+														<MTolerance>0.001</MTolerance>
+														<WKID>4686</WKID>
+														<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+														<XOrigin>-400</XOrigin>
+														<XYScale>999999999.99999988</XYScale>
+														<XYTolerance>8.98315284119521e-009</XYTolerance>
+														<YOrigin>-400</YOrigin>
+														<ZOrigin>-100000</ZOrigin>
+														<ZScale>10000</ZScale>
+														<ZTolerance>0.001</ZTolerance>
+													</SpatialReference>
+												</GeometryDef>
+												<IsNullable>true</IsNullable>
+												<Length>4</Length>
+												<ModelName>shape</ModelName>
+												<Precision>0</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>r46_sde_rowid_uk</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>objectid</Name>
+												<Type>esriFieldTypeOID</Type>
+												<AliasName>OBJECTID</AliasName>
+												<DomainFixed>true</DomainFixed>
+												<Editable>false</Editable>
+												<IsNullable>false</IsNullable>
+												<Length>4</Length>
+												<ModelName>objectid</ModelName>
+												<Precision>10</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+								</Index>
+							</IndexArray>
+						</Indexes>
+						<AliasName>Denuncias IDEAM</AliasName>
+						<CLSID>{52353152-891A-11D0-BEC6-00805F7C4268}</CLSID>
+						<ShapeType>esriGeometryPoint</ShapeType>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<RelationshipClassNames xsi:type="esri:Names"/>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Extent xsi:type="esri:EnvelopeN">
+							<XMin>NaN</XMin>
+							<YMin>NaN</YMin>
+							<XMax>NaN</XMax>
+							<YMax>NaN</YMax>
+							<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+								<HighPrecision>true</HighPrecision>
+								<LeftLongitude>-180</LeftLongitude>
+								<MOrigin>-100000</MOrigin>
+								<MScale>10000</MScale>
+								<MTolerance>0.001</MTolerance>
+								<WKID>4686</WKID>
+								<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+								<XOrigin>-400</XOrigin>
+								<XYScale>999999999.99999988</XYScale>
+								<XYTolerance>8.98315284119521e-009</XYTolerance>
+								<YOrigin>-400</YOrigin>
+								<ZOrigin>-100000</ZOrigin>
+								<ZScale>10000</ZScale>
+								<ZTolerance>0.001</ZTolerance>
+							</SpatialReference>
+						</Extent>
+						<AreaFieldName/>
+						<CanVersion>true</CanVersion>
+						<DSID>430</DSID>
+						<FeatureType>esriFTSimple</FeatureType>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<HasM>false</HasM>
+						<HasSpatialIndex>true</HasSpatialIndex>
+						<HasZ>false</HasZ>
+						<LengthFieldName/>
+						<ModelName/>
+						<HasOID>true</HasOID>
+						<OIDFieldName>objectid</OIDFieldName>
+						<RasterFieldName/>
+						<ShapeFieldName>shape</ShapeFieldName>
+						<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+							<HighPrecision>true</HighPrecision>
+							<LeftLongitude>-180</LeftLongitude>
+							<MOrigin>-100000</MOrigin>
+							<MScale>10000</MScale>
+							<MTolerance>0.001</MTolerance>
+							<WKID>4686</WKID>
+							<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+							<XOrigin>-400</XOrigin>
+							<XYScale>999999999.99999988</XYScale>
+							<XYTolerance>8.98315284119521e-009</XYTolerance>
+							<YOrigin>-400</YOrigin>
+							<ZOrigin>-100000</ZOrigin>
+							<ZScale>10000</ZScale>
+							<ZTolerance>0.001</ZTolerance>
+						</SpatialReference>
+						<Versioned>false</Versioned>
+					</DataElement>
+					<DataElement xsi:type="esri:DEFeatureClass">
+						<CatalogPath>/FD=gdb_bpr.sde.Consultas/FC=gdb_bpr.sde.Poblacion</CatalogPath>
+						<Name>gdb_bpr.sde.Poblacion</Name>
+						<DatasetType>esriDTFeatureClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField">
+								<Field xsi:type="esri:Field">
+									<Name>objectid</Name>
+									<Type>esriFieldTypeOID</Type>
+									<AliasName>OBJECTID</AliasName>
+									<DomainFixed>true</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>4</Length>
+									<ModelName>objectid</ModelName>
+									<Precision>10</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>shape</Name>
+									<Type>esriFieldTypeGeometry</Type>
+									<AliasName/>
+									<DomainFixed>true</DomainFixed>
+									<Editable>true</Editable>
+									<GeometryDef xsi:type="esri:GeometryDef">
+										<AvgNumPoints>0</AvgNumPoints>
+										<HasM>false</HasM>
+										<HasZ>false</HasZ>
+										<GridSize0>-2</GridSize0>
+										<GeometryType>esriGeometryPolyline</GeometryType>
+										<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+											<HighPrecision>true</HighPrecision>
+											<LeftLongitude>-180</LeftLongitude>
+											<MOrigin>-100000</MOrigin>
+											<MScale>10000</MScale>
+											<MTolerance>0.001</MTolerance>
+											<WKID>4686</WKID>
+											<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+											<XOrigin>-400</XOrigin>
+											<XYScale>999999999.99999988</XYScale>
+											<XYTolerance>8.98315284119521e-009</XYTolerance>
+											<YOrigin>-400</YOrigin>
+											<ZOrigin>-100000</ZOrigin>
+											<ZScale>10000</ZScale>
+											<ZTolerance>0.001</ZTolerance>
+										</SpatialReference>
+									</GeometryDef>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>shape</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codnucle</Name>
+									<Type>esriFieldTypeInteger</Type>
+									<AliasName>codNucle</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>codnucle</ModelName>
+									<Precision>10</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codpredio</Name>
+									<Type>esriFieldTypeInteger</Type>
+									<AliasName>codPredio</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>codpredio</ModelName>
+									<Precision>10</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codzest</Name>
+									<Type>esriFieldTypeInteger</Type>
+									<AliasName>codZEst</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>codzest</ModelName>
+									<Precision>10</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>descripcion</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Descripcion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>500</Length>
+									<ModelName>descripcion</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>fechaactu</Name>
+									<Type>esriFieldTypeDate</Type>
+									<AliasName>FechaActu</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>fechaactu</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>formaacceso</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>FormaAcceso</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>500</Length>
+									<ModelName>coorx</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>id</Name>
+									<Type>esriFieldTypeInteger</Type>
+									<AliasName>id</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>id</ModelName>
+									<Precision>10</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_length(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_length(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>tiempototal</Name>
+									<Type>esriFieldTypeInteger</Type>
+									<AliasName>TiempoTotal</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>coory</ModelName>
+									<Precision>10</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+							</FieldArray>
+						</Fields>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex">
+								<Index xsi:type="esri:Index">
+									<Name>a20_ix1</Name>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>shape</Name>
+												<Type>esriFieldTypeGeometry</Type>
+												<AliasName/>
+												<DomainFixed>true</DomainFixed>
+												<Editable>true</Editable>
+												<GeometryDef xsi:type="esri:GeometryDef">
+													<AvgNumPoints>0</AvgNumPoints>
+													<HasM>false</HasM>
+													<HasZ>false</HasZ>
+													<GridSize0>-2</GridSize0>
+													<GeometryType>esriGeometryPolyline</GeometryType>
+													<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+														<HighPrecision>true</HighPrecision>
+														<LeftLongitude>-180</LeftLongitude>
+														<MOrigin>-100000</MOrigin>
+														<MScale>10000</MScale>
+														<MTolerance>0.001</MTolerance>
+														<WKID>4686</WKID>
+														<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+														<XOrigin>-400</XOrigin>
+														<XYScale>999999999.99999988</XYScale>
+														<XYTolerance>8.98315284119521e-009</XYTolerance>
+														<YOrigin>-400</YOrigin>
+														<ZOrigin>-100000</ZOrigin>
+														<ZScale>10000</ZScale>
+														<ZTolerance>0.001</ZTolerance>
+													</SpatialReference>
+												</GeometryDef>
+												<IsNullable>true</IsNullable>
+												<Length>4</Length>
+												<ModelName>shape</ModelName>
+												<Precision>0</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>r28_sde_rowid_uk</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>objectid</Name>
+												<Type>esriFieldTypeOID</Type>
+												<AliasName>OBJECTID</AliasName>
+												<DomainFixed>true</DomainFixed>
+												<Editable>false</Editable>
+												<IsNullable>false</IsNullable>
+												<Length>4</Length>
+												<ModelName>objectid</ModelName>
+												<Precision>10</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+								</Index>
+							</IndexArray>
+						</Indexes>
+						<AliasName>RutaAccesoPredio</AliasName>
+						<CLSID>{52353152-891A-11D0-BEC6-00805F7C4268}</CLSID>
+						<ShapeType>esriGeometryPolyline</ShapeType>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<RelationshipClassNames xsi:type="esri:Names"/>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Extent xsi:type="esri:EnvelopeN">
+							<XMin>NaN</XMin>
+							<YMin>NaN</YMin>
+							<XMax>NaN</XMax>
+							<YMax>NaN</YMax>
+							<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+								<HighPrecision>true</HighPrecision>
+								<LeftLongitude>-180</LeftLongitude>
+								<MOrigin>-100000</MOrigin>
+								<MScale>10000</MScale>
+								<MTolerance>0.001</MTolerance>
+								<WKID>4686</WKID>
+								<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+								<XOrigin>-400</XOrigin>
+								<XYScale>999999999.99999988</XYScale>
+								<XYTolerance>8.98315284119521e-009</XYTolerance>
+								<YOrigin>-400</YOrigin>
+								<ZOrigin>-100000</ZOrigin>
+								<ZScale>10000</ZScale>
+								<ZTolerance>0.001</ZTolerance>
+							</SpatialReference>
+						</Extent>
+						<AreaFieldName/>
+						<CanVersion>true</CanVersion>
+						<DSID>29</DSID>
+						<FeatureType>esriFTSimple</FeatureType>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<HasM>false</HasM>
+						<HasSpatialIndex>true</HasSpatialIndex>
+						<HasZ>false</HasZ>
+						<LengthFieldName>st_length(shape)</LengthFieldName>
+						<ModelName/>
+						<HasOID>true</HasOID>
+						<OIDFieldName>objectid</OIDFieldName>
+						<RasterFieldName/>
+						<ShapeFieldName>shape</ShapeFieldName>
+						<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+							<HighPrecision>true</HighPrecision>
+							<LeftLongitude>-180</LeftLongitude>
+							<MOrigin>-100000</MOrigin>
+							<MScale>10000</MScale>
+							<MTolerance>0.001</MTolerance>
+							<WKID>4686</WKID>
+							<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+							<XOrigin>-400</XOrigin>
+							<XYScale>999999999.99999988</XYScale>
+							<XYTolerance>8.98315284119521e-009</XYTolerance>
+							<YOrigin>-400</YOrigin>
+							<ZOrigin>-100000</ZOrigin>
+							<ZScale>10000</ZScale>
+							<ZTolerance>0.001</ZTolerance>
+						</SpatialReference>
+						<Versioned>false</Versioned>
+					</DataElement>
+					<DataElement xsi:type="esri:DEFeatureClass">
+						<CatalogPath>/FD=gdb_bpr.sde.Consultas/FC=gdb_bpr.sde.Pobreza</CatalogPath>
+						<Name>gdb_bpr.sde.Pobreza</Name>
+						<DatasetType>esriDTFeatureClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField">
+								<Field xsi:type="esri:Field">
+									<Name>objectid</Name>
+									<Type>esriFieldTypeOID</Type>
+									<AliasName>OBJECTID</AliasName>
+									<DomainFixed>true</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>4</Length>
+									<ModelName>objectid</ModelName>
+									<Precision>10</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>shape</Name>
+									<Type>esriFieldTypeGeometry</Type>
+									<AliasName/>
+									<DomainFixed>true</DomainFixed>
+									<Editable>true</Editable>
+									<GeometryDef xsi:type="esri:GeometryDef">
+										<AvgNumPoints>0</AvgNumPoints>
+										<HasM>false</HasM>
+										<HasZ>false</HasZ>
+										<GridSize0>-2</GridSize0>
+										<GeometryType>esriGeometryPoint</GeometryType>
+										<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+											<HighPrecision>true</HighPrecision>
+											<LeftLongitude>-180</LeftLongitude>
+											<MOrigin>-100000</MOrigin>
+											<MScale>10000</MScale>
+											<MTolerance>0.001</MTolerance>
+											<WKID>4686</WKID>
+											<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+											<XOrigin>-400</XOrigin>
+											<XYScale>999999999.99999988</XYScale>
+											<XYTolerance>8.98315284119521e-009</XYTolerance>
+											<YOrigin>-400</YOrigin>
+											<ZOrigin>-100000</ZOrigin>
+											<ZScale>10000</ZScale>
+											<ZTolerance>0.001</ZTolerance>
+										</SpatialReference>
+									</GeometryDef>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>shape</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>cod_aso</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>codNucle</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>codnucle</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>cod_ver</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Veredat</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>11</Length>
+									<ModelName>codzest</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codkpre</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>codPredio</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>16</Length>
+									<ModelName>codpredio</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>coorx</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>Coordenada x</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>coorx</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>coory</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>Coordenada Y</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>coory</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>descripcion</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Descripcion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>500</Length>
+									<ModelName>descripcion</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>fechaactu</Name>
+									<Type>esriFieldTypeDate</Type>
+									<AliasName>Fecha Actualizacion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>fechaactu</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>idpuntpred</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Id Puntos Predios</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>id</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+							</FieldArray>
+						</Fields>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex">
+								<Index xsi:type="esri:Index">
+									<Name>a19_ix1</Name>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>shape</Name>
+												<Type>esriFieldTypeGeometry</Type>
+												<AliasName/>
+												<DomainFixed>true</DomainFixed>
+												<Editable>true</Editable>
+												<GeometryDef xsi:type="esri:GeometryDef">
+													<AvgNumPoints>0</AvgNumPoints>
+													<HasM>false</HasM>
+													<HasZ>false</HasZ>
+													<GridSize0>-2</GridSize0>
+													<GeometryType>esriGeometryPoint</GeometryType>
+													<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+														<HighPrecision>true</HighPrecision>
+														<LeftLongitude>-180</LeftLongitude>
+														<MOrigin>-100000</MOrigin>
+														<MScale>10000</MScale>
+														<MTolerance>0.001</MTolerance>
+														<WKID>4686</WKID>
+														<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+														<XOrigin>-400</XOrigin>
+														<XYScale>999999999.99999988</XYScale>
+														<XYTolerance>8.98315284119521e-009</XYTolerance>
+														<YOrigin>-400</YOrigin>
+														<ZOrigin>-100000</ZOrigin>
+														<ZScale>10000</ZScale>
+														<ZTolerance>0.001</ZTolerance>
+													</SpatialReference>
+												</GeometryDef>
+												<IsNullable>true</IsNullable>
+												<Length>4</Length>
+												<ModelName>shape</ModelName>
+												<Precision>0</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>r27_sde_rowid_uk</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>objectid</Name>
+												<Type>esriFieldTypeOID</Type>
+												<AliasName>OBJECTID</AliasName>
+												<DomainFixed>true</DomainFixed>
+												<Editable>false</Editable>
+												<IsNullable>false</IsNullable>
+												<Length>4</Length>
+												<ModelName>objectid</ModelName>
+												<Precision>10</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+								</Index>
+							</IndexArray>
+						</Indexes>
+						<AliasName>PuntosPredios</AliasName>
+						<CLSID>{52353152-891A-11D0-BEC6-00805F7C4268}</CLSID>
+						<ShapeType>esriGeometryPoint</ShapeType>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<RelationshipClassNames xsi:type="esri:Names"/>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Extent xsi:type="esri:EnvelopeN">
+							<XMin>NaN</XMin>
+							<YMin>NaN</YMin>
+							<XMax>NaN</XMax>
+							<YMax>NaN</YMax>
+							<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+								<HighPrecision>true</HighPrecision>
+								<LeftLongitude>-180</LeftLongitude>
+								<MOrigin>-100000</MOrigin>
+								<MScale>10000</MScale>
+								<MTolerance>0.001</MTolerance>
+								<WKID>4686</WKID>
+								<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+								<XOrigin>-400</XOrigin>
+								<XYScale>999999999.99999988</XYScale>
+								<XYTolerance>8.98315284119521e-009</XYTolerance>
+								<YOrigin>-400</YOrigin>
+								<ZOrigin>-100000</ZOrigin>
+								<ZScale>10000</ZScale>
+								<ZTolerance>0.001</ZTolerance>
+							</SpatialReference>
+						</Extent>
+						<AreaFieldName/>
+						<CanVersion>true</CanVersion>
+						<DSID>28</DSID>
+						<FeatureType>esriFTSimple</FeatureType>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<HasM>false</HasM>
+						<HasSpatialIndex>true</HasSpatialIndex>
+						<HasZ>false</HasZ>
+						<LengthFieldName/>
+						<ModelName/>
+						<HasOID>true</HasOID>
+						<OIDFieldName>objectid</OIDFieldName>
+						<RasterFieldName/>
+						<ShapeFieldName>shape</ShapeFieldName>
+						<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+							<HighPrecision>true</HighPrecision>
+							<LeftLongitude>-180</LeftLongitude>
+							<MOrigin>-100000</MOrigin>
+							<MScale>10000</MScale>
+							<MTolerance>0.001</MTolerance>
+							<WKID>4686</WKID>
+							<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+							<XOrigin>-400</XOrigin>
+							<XYScale>999999999.99999988</XYScale>
+							<XYTolerance>8.98315284119521e-009</XYTolerance>
+							<YOrigin>-400</YOrigin>
+							<ZOrigin>-100000</ZOrigin>
+							<ZScale>10000</ZScale>
+							<ZTolerance>0.001</ZTolerance>
+						</SpatialReference>
+						<Versioned>false</Versioned>
+					</DataElement>
+				</Children>
+				<Extent xsi:type="esri:EnvelopeN">
+					<XMin>NaN</XMin>
+					<YMin>NaN</YMin>
+					<XMax>NaN</XMax>
+					<YMax>NaN</YMax>
+					<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+						<HighPrecision>true</HighPrecision>
+						<LeftLongitude>-180</LeftLongitude>
+						<MOrigin>-100000</MOrigin>
+						<MScale>10000</MScale>
+						<MTolerance>0.001</MTolerance>
+						<WKID>4686</WKID>
+						<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+						<XOrigin>-400</XOrigin>
+						<XYScale>999999999.99999988</XYScale>
+						<XYTolerance>8.98315284119521e-009</XYTolerance>
+						<YOrigin>-400</YOrigin>
+						<ZOrigin>-100000</ZOrigin>
+						<ZScale>10000</ZScale>
+						<ZTolerance>0.001</ZTolerance>
+					</SpatialReference>
+				</Extent>
+				<CanVersion>true</CanVersion>
+				<DSID>27</DSID>
+				<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+					<HighPrecision>true</HighPrecision>
+					<LeftLongitude>-180</LeftLongitude>
+					<MOrigin>-100000</MOrigin>
+					<MScale>10000</MScale>
+					<MTolerance>0.001</MTolerance>
+					<WKID>4686</WKID>
+					<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+					<XOrigin>-400</XOrigin>
+					<XYScale>999999999.99999988</XYScale>
+					<XYTolerance>8.98315284119521e-009</XYTolerance>
+					<YOrigin>-400</YOrigin>
+					<ZOrigin>-100000</ZOrigin>
+					<ZScale>10000</ZScale>
+					<ZTolerance>0.001</ZTolerance>
+				</SpatialReference>
+				<Versioned>false</Versioned>
+			</DataElement>
+			<DataElement xsi:type="esri:DEFeatureDataset">
+				<CatalogPath>/FD=gdb_bpr.sde.IgacBase</CatalogPath>
+				<Name>gdb_bpr.sde.IgacBase</Name>
+				<DatasetType>esriDTFeatureDataset</DatasetType>
+				<Children xsi:type="esri:ArrayOfDataElement">
+					<DataElement xsi:type="esri:DEFeatureClass">
+						<CatalogPath>/FD=gdb_bpr.sde.IgacBase/FC=gdb_moscal.sde.Bosque_NoBosque</CatalogPath>
+						<Name>gdb_moscal.sde.Bosque_NoBosque</Name>
+						<DatasetType>esriDTFeatureClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField">
+								<Field xsi:type="esri:Field">
+									<Name>objectid</Name>
+									<Type>esriFieldTypeOID</Type>
+									<AliasName>OBJECTID</AliasName>
+									<DomainFixed>true</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>4</Length>
+									<ModelName>objectid</ModelName>
+									<Precision>10</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>shape</Name>
+									<Type>esriFieldTypeGeometry</Type>
+									<AliasName/>
+									<DomainFixed>true</DomainFixed>
+									<Editable>true</Editable>
+									<GeometryDef xsi:type="esri:GeometryDef">
+										<AvgNumPoints>0</AvgNumPoints>
+										<HasM>false</HasM>
+										<HasZ>false</HasZ>
+										<GridSize0>-2</GridSize0>
+										<GeometryType>esriGeometryPolygon</GeometryType>
+										<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+											<HighPrecision>true</HighPrecision>
+											<LeftLongitude>-180</LeftLongitude>
+											<MOrigin>-100000</MOrigin>
+											<MScale>10000</MScale>
+											<MTolerance>0.001</MTolerance>
+											<WKID>4686</WKID>
+											<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+											<XOrigin>-400</XOrigin>
+											<XYScale>999999999.99999988</XYScale>
+											<XYTolerance>8.98315284119521e-009</XYTolerance>
+											<YOrigin>-400</YOrigin>
+											<ZOrigin>-100000</ZOrigin>
+											<ZScale>10000</ZScale>
+											<ZTolerance>0.001</ZTolerance>
+										</SpatialReference>
+									</GeometryDef>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>shape</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>a_ha</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>Area de bosque ha</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>a_ha</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>categoria</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>categoria</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>categoria</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>cod_aso</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Asociacion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>codnucle</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>cod_ver</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Vereda</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>11</Length>
+									<ModelName>codzonaest</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codkpre</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Predio</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>16</Length>
+									<ModelName>codkpre</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>fechaactu</Name>
+									<Type>esriFieldTypeDate</Type>
+									<AliasName>Fecha Actualizacion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>fechaactu</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>idbnb</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>id Bosque No Bosque</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>id</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_area(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_area(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_length(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_length(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+							</FieldArray>
+						</Fields>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex">
+								<Index xsi:type="esri:Index">
+									<Name>a22_ix1</Name>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>shape</Name>
+												<Type>esriFieldTypeGeometry</Type>
+												<AliasName/>
+												<DomainFixed>true</DomainFixed>
+												<Editable>true</Editable>
+												<GeometryDef xsi:type="esri:GeometryDef">
+													<AvgNumPoints>0</AvgNumPoints>
+													<HasM>false</HasM>
+													<HasZ>false</HasZ>
+													<GridSize0>-2</GridSize0>
+													<GeometryType>esriGeometryPolygon</GeometryType>
+													<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+														<HighPrecision>true</HighPrecision>
+														<LeftLongitude>-180</LeftLongitude>
+														<MOrigin>-100000</MOrigin>
+														<MScale>10000</MScale>
+														<MTolerance>0.001</MTolerance>
+														<WKID>4686</WKID>
+														<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+														<XOrigin>-400</XOrigin>
+														<XYScale>999999999.99999988</XYScale>
+														<XYTolerance>8.98315284119521e-009</XYTolerance>
+														<YOrigin>-400</YOrigin>
+														<ZOrigin>-100000</ZOrigin>
+														<ZScale>10000</ZScale>
+														<ZTolerance>0.001</ZTolerance>
+													</SpatialReference>
+												</GeometryDef>
+												<IsNullable>true</IsNullable>
+												<Length>4</Length>
+												<ModelName>shape</ModelName>
+												<Precision>0</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>gdb_33_codkpre</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>codkpre</Name>
+												<Type>esriFieldTypeString</Type>
+												<AliasName>Codigo Predio</AliasName>
+												<DomainFixed>false</DomainFixed>
+												<Editable>true</Editable>
+												<IsNullable>true</IsNullable>
+												<Length>16</Length>
+												<ModelName>codkpre</ModelName>
+												<Precision>0</Precision>
+												<Required>false</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>false</IsUnique>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>r30_sde_rowid_uk</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>objectid</Name>
+												<Type>esriFieldTypeOID</Type>
+												<AliasName>OBJECTID</AliasName>
+												<DomainFixed>true</DomainFixed>
+												<Editable>false</Editable>
+												<IsNullable>false</IsNullable>
+												<Length>4</Length>
+												<ModelName>objectid</ModelName>
+												<Precision>10</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+								</Index>
+							</IndexArray>
+						</Indexes>
+						<AliasName>Bosque_NoBosque</AliasName>
+						<CLSID>{52353152-891A-11D0-BEC6-00805F7C4268}</CLSID>
+						<ShapeType>esriGeometryPolygon</ShapeType>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<RelationshipClassNames xsi:type="esri:Names">
+							<Name>gdb_moscal.sde.KPre_BNB</Name>
+						</RelationshipClassNames>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Extent xsi:type="esri:EnvelopeN">
+							<XMin>NaN</XMin>
+							<YMin>NaN</YMin>
+							<XMax>NaN</XMax>
+							<YMax>NaN</YMax>
+							<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+								<HighPrecision>true</HighPrecision>
+								<LeftLongitude>-180</LeftLongitude>
+								<MOrigin>-100000</MOrigin>
+								<MScale>10000</MScale>
+								<MTolerance>0.001</MTolerance>
+								<WKID>4686</WKID>
+								<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+								<XOrigin>-400</XOrigin>
+								<XYScale>999999999.99999988</XYScale>
+								<XYTolerance>8.98315284119521e-009</XYTolerance>
+								<YOrigin>-400</YOrigin>
+								<ZOrigin>-100000</ZOrigin>
+								<ZScale>10000</ZScale>
+								<ZTolerance>0.001</ZTolerance>
+							</SpatialReference>
+						</Extent>
+						<AreaFieldName>st_area(shape)</AreaFieldName>
+						<CanVersion>true</CanVersion>
+						<DSID>33</DSID>
+						<FeatureType>esriFTSimple</FeatureType>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<HasM>false</HasM>
+						<HasSpatialIndex>true</HasSpatialIndex>
+						<HasZ>false</HasZ>
+						<LengthFieldName>st_length(shape)</LengthFieldName>
+						<ModelName/>
+						<HasOID>true</HasOID>
+						<OIDFieldName>objectid</OIDFieldName>
+						<RasterFieldName/>
+						<ShapeFieldName>shape</ShapeFieldName>
+						<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+							<HighPrecision>true</HighPrecision>
+							<LeftLongitude>-180</LeftLongitude>
+							<MOrigin>-100000</MOrigin>
+							<MScale>10000</MScale>
+							<MTolerance>0.001</MTolerance>
+							<WKID>4686</WKID>
+							<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+							<XOrigin>-400</XOrigin>
+							<XYScale>999999999.99999988</XYScale>
+							<XYTolerance>8.98315284119521e-009</XYTolerance>
+							<YOrigin>-400</YOrigin>
+							<ZOrigin>-100000</ZOrigin>
+							<ZScale>10000</ZScale>
+							<ZTolerance>0.001</ZTolerance>
+						</SpatialReference>
+						<Versioned>false</Versioned>
+					</DataElement>
+					<DataElement xsi:type="esri:DEFeatureClass">
+						<CatalogPath>/FD=gdb_bpr.sde.IgacBase/FC=gdb_moscal.sde.Cobertura</CatalogPath>
+						<Name>gdb_moscal.sde.Cobertura</Name>
+						<DatasetType>esriDTFeatureClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField">
+								<Field xsi:type="esri:Field">
+									<Name>objectid</Name>
+									<Type>esriFieldTypeOID</Type>
+									<AliasName>OBJECTID</AliasName>
+									<DomainFixed>true</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>4</Length>
+									<ModelName>objectid</ModelName>
+									<Precision>10</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>shape</Name>
+									<Type>esriFieldTypeGeometry</Type>
+									<AliasName>SHAPE</AliasName>
+									<DomainFixed>true</DomainFixed>
+									<Editable>true</Editable>
+									<GeometryDef xsi:type="esri:GeometryDef">
+										<AvgNumPoints>0</AvgNumPoints>
+										<HasM>false</HasM>
+										<HasZ>false</HasZ>
+										<GridSize0>-2</GridSize0>
+										<GeometryType>esriGeometryPolygon</GeometryType>
+										<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+											<HighPrecision>true</HighPrecision>
+											<LeftLongitude>-180</LeftLongitude>
+											<MOrigin>-100000</MOrigin>
+											<MScale>10000</MScale>
+											<MTolerance>0.001</MTolerance>
+											<WKID>4686</WKID>
+											<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+											<XOrigin>-400</XOrigin>
+											<XYScale>999999999.99999988</XYScale>
+											<XYTolerance>8.98315284119521e-009</XYTolerance>
+											<YOrigin>-400</YOrigin>
+											<ZOrigin>-100000</ZOrigin>
+											<ZScale>10000</ZScale>
+											<ZTolerance>0.001</ZTolerance>
+										</SpatialReference>
+									</GeometryDef>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>shape</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>a_cob_ha</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>Area  ha</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>a_cob_ha__</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>apoyo</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Apoyo</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>50</Length>
+									<ModelName>Apoyo</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>cambio</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Cambio</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>Cambio</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>cod_aso</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Asociacion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>Cod_Aso</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>cod_ver</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Vereda</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>11</Length>
+									<ModelName>Cod_Ver</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codigonv1</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>CodigoNv1</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>CodigoNv1</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codigonv2</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>CodigoNv2	
+LeyendaNv2	
+CodigoNv3	
+LeyendaNv3	
+CodigoNv4	
+LeyendaNv4	
+CodigoNv5	
+LeyendaNv5	
+CodigoNv6	
+LeyendaNv6	
+A_Cob_HA	
+Insumo	
+Apoyo	
+Confiabili	
+Cambio	
+FechaActu</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>CodigoNv2</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codigonv3</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>CodigoNv3</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>CodigoNv3</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codigonv4</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>CodigoNv4</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>CodigoNv4</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codigonv5</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>CodigoNv5</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>50</Length>
+									<ModelName>CodigoNv5</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codigonv6</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>CodigoNv6</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>CodigoNv6</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codkpre</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Predio</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>16</Length>
+									<ModelName>CodKpre</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>confiabili</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Confiabilidad</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>Confiabili</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>fechaactu</Name>
+									<Type>esriFieldTypeDate</Type>
+									<AliasName>FechaActu</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>FechaActu</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>idusoact</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>identificador Uso Actual </AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>IdUsoAct</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>insumo</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Insumo	
+Insumo</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>Insumo</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>leyendanv1</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>LeyendaNv1</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>100</Length>
+									<ModelName>LeyendaNv1</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>leyendanv2</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>LeyendaNv2</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>100</Length>
+									<ModelName>LeyendaNv2</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>leyendanv3</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>LeyendaNv3</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>100</Length>
+									<ModelName>LeyendaNv3</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>leyendanv4</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>LeyendaNv4</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>100</Length>
+									<ModelName>LeyendaNv4</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>leyendanv5</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>LeyendaNv5</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>100</Length>
+									<ModelName>LeyendaNv5</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>leyendanv6</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>LeyendaNv6</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>100</Length>
+									<ModelName>LeyendaNv6</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_area(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_area(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_length(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_length(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+							</FieldArray>
+						</Fields>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex">
+								<Index xsi:type="esri:Index">
+									<Name>a34_ix1</Name>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>shape</Name>
+												<Type>esriFieldTypeGeometry</Type>
+												<AliasName>SHAPE</AliasName>
+												<DomainFixed>true</DomainFixed>
+												<Editable>true</Editable>
+												<GeometryDef xsi:type="esri:GeometryDef">
+													<AvgNumPoints>0</AvgNumPoints>
+													<HasM>false</HasM>
+													<HasZ>false</HasZ>
+													<GridSize0>-2</GridSize0>
+													<GeometryType>esriGeometryPolygon</GeometryType>
+													<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+														<HighPrecision>true</HighPrecision>
+														<LeftLongitude>-180</LeftLongitude>
+														<MOrigin>-100000</MOrigin>
+														<MScale>10000</MScale>
+														<MTolerance>0.001</MTolerance>
+														<WKID>4686</WKID>
+														<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+														<XOrigin>-400</XOrigin>
+														<XYScale>999999999.99999988</XYScale>
+														<XYTolerance>8.98315284119521e-009</XYTolerance>
+														<YOrigin>-400</YOrigin>
+														<ZOrigin>-100000</ZOrigin>
+														<ZScale>10000</ZScale>
+														<ZTolerance>0.001</ZTolerance>
+													</SpatialReference>
+												</GeometryDef>
+												<IsNullable>true</IsNullable>
+												<Length>4</Length>
+												<ModelName>shape</ModelName>
+												<Precision>0</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>gdb_429_codkpre</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>codkpre</Name>
+												<Type>esriFieldTypeString</Type>
+												<AliasName>Codigo Predio</AliasName>
+												<DomainFixed>false</DomainFixed>
+												<Editable>true</Editable>
+												<IsNullable>true</IsNullable>
+												<Length>16</Length>
+												<ModelName>CodKpre</ModelName>
+												<Precision>0</Precision>
+												<Required>false</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>false</IsUnique>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>r45_sde_rowid_uk</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>objectid</Name>
+												<Type>esriFieldTypeOID</Type>
+												<AliasName>OBJECTID</AliasName>
+												<DomainFixed>true</DomainFixed>
+												<Editable>false</Editable>
+												<IsNullable>false</IsNullable>
+												<Length>4</Length>
+												<ModelName>objectid</ModelName>
+												<Precision>10</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+								</Index>
+							</IndexArray>
+						</Indexes>
+						<AliasName>Cobertura</AliasName>
+						<CLSID>{52353152-891A-11D0-BEC6-00805F7C4268}</CLSID>
+						<ShapeType>esriGeometryPolygon</ShapeType>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<RelationshipClassNames xsi:type="esri:Names">
+							<Name>gdb_moscal.sde.KPre_Cob</Name>
+						</RelationshipClassNames>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Extent xsi:type="esri:EnvelopeN">
+							<XMin>NaN</XMin>
+							<YMin>NaN</YMin>
+							<XMax>NaN</XMax>
+							<YMax>NaN</YMax>
+							<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+								<HighPrecision>true</HighPrecision>
+								<LeftLongitude>-180</LeftLongitude>
+								<MOrigin>-100000</MOrigin>
+								<MScale>10000</MScale>
+								<MTolerance>0.001</MTolerance>
+								<WKID>4686</WKID>
+								<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+								<XOrigin>-400</XOrigin>
+								<XYScale>999999999.99999988</XYScale>
+								<XYTolerance>8.98315284119521e-009</XYTolerance>
+								<YOrigin>-400</YOrigin>
+								<ZOrigin>-100000</ZOrigin>
+								<ZScale>10000</ZScale>
+								<ZTolerance>0.001</ZTolerance>
+							</SpatialReference>
+						</Extent>
+						<AreaFieldName>st_area(shape)</AreaFieldName>
+						<CanVersion>true</CanVersion>
+						<DSID>429</DSID>
+						<FeatureType>esriFTSimple</FeatureType>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<HasM>false</HasM>
+						<HasSpatialIndex>true</HasSpatialIndex>
+						<HasZ>false</HasZ>
+						<LengthFieldName>st_length(shape)</LengthFieldName>
+						<ModelName/>
+						<HasOID>true</HasOID>
+						<OIDFieldName>objectid</OIDFieldName>
+						<RasterFieldName/>
+						<ShapeFieldName>shape</ShapeFieldName>
+						<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+							<HighPrecision>true</HighPrecision>
+							<LeftLongitude>-180</LeftLongitude>
+							<MOrigin>-100000</MOrigin>
+							<MScale>10000</MScale>
+							<MTolerance>0.001</MTolerance>
+							<WKID>4686</WKID>
+							<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+							<XOrigin>-400</XOrigin>
+							<XYScale>999999999.99999988</XYScale>
+							<XYTolerance>8.98315284119521e-009</XYTolerance>
+							<YOrigin>-400</YOrigin>
+							<ZOrigin>-100000</ZOrigin>
+							<ZScale>10000</ZScale>
+							<ZTolerance>0.001</ZTolerance>
+						</SpatialReference>
+						<Versioned>false</Versioned>
+					</DataElement>
+					<DataElement xsi:type="esri:DEFeatureClass">
+						<CatalogPath>/FD=gdb_bpr.sde.IgacBase/FC=gdb_moscal.sde.Conectividad</CatalogPath>
+						<Name>gdb_moscal.sde.Conectividad</Name>
+						<DatasetType>esriDTFeatureClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField">
+								<Field xsi:type="esri:Field">
+									<Name>objectid</Name>
+									<Type>esriFieldTypeOID</Type>
+									<AliasName>OBJECTID</AliasName>
+									<DomainFixed>true</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>4</Length>
+									<ModelName>objectid</ModelName>
+									<Precision>10</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>shape</Name>
+									<Type>esriFieldTypeGeometry</Type>
+									<AliasName/>
+									<DomainFixed>true</DomainFixed>
+									<Editable>true</Editable>
+									<GeometryDef xsi:type="esri:GeometryDef">
+										<AvgNumPoints>0</AvgNumPoints>
+										<HasM>false</HasM>
+										<HasZ>false</HasZ>
+										<GridSize0>-2</GridSize0>
+										<GeometryType>esriGeometryPolygon</GeometryType>
+										<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+											<HighPrecision>true</HighPrecision>
+											<LeftLongitude>-180</LeftLongitude>
+											<MOrigin>-100000</MOrigin>
+											<MScale>10000</MScale>
+											<MTolerance>0.001</MTolerance>
+											<WKID>4686</WKID>
+											<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+											<XOrigin>-400</XOrigin>
+											<XYScale>999999999.99999988</XYScale>
+											<XYTolerance>8.98315284119521e-009</XYTolerance>
+											<YOrigin>-400</YOrigin>
+											<ZOrigin>-100000</ZOrigin>
+											<ZScale>10000</ZScale>
+											<ZTolerance>0.001</ZTolerance>
+										</SpatialReference>
+									</GeometryDef>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>shape</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>c</Name>
+									<Type>esriFieldTypeSmallInteger</Type>
+									<AliasName>c</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>2</Length>
+									<ModelName>c</ModelName>
+									<Precision>5</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codkpre</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Predio</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>16</Length>
+									<ModelName>codkpre</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>core</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>CORE</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>core</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>fechaactu</Name>
+									<Type>esriFieldTypeDate</Type>
+									<AliasName>Fecha Actualizacion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>fechaactu</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>idconect</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Conectividad</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>idconect</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>indice</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Indice</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>11</Length>
+									<ModelName>indice</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>np</Name>
+									<Type>esriFieldTypeSmallInteger</Type>
+									<AliasName>NP</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>2</Length>
+									<ModelName>np</ModelName>
+									<Precision>5</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_area(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_area(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_length(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_length(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+							</FieldArray>
+						</Fields>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex">
+								<Index xsi:type="esri:Index">
+									<Name>a33_ix1</Name>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>shape</Name>
+												<Type>esriFieldTypeGeometry</Type>
+												<AliasName/>
+												<DomainFixed>true</DomainFixed>
+												<Editable>true</Editable>
+												<GeometryDef xsi:type="esri:GeometryDef">
+													<AvgNumPoints>0</AvgNumPoints>
+													<HasM>false</HasM>
+													<HasZ>false</HasZ>
+													<GridSize0>-2</GridSize0>
+													<GeometryType>esriGeometryPolygon</GeometryType>
+													<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+														<HighPrecision>true</HighPrecision>
+														<LeftLongitude>-180</LeftLongitude>
+														<MOrigin>-100000</MOrigin>
+														<MScale>10000</MScale>
+														<MTolerance>0.001</MTolerance>
+														<WKID>4686</WKID>
+														<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+														<XOrigin>-400</XOrigin>
+														<XYScale>999999999.99999988</XYScale>
+														<XYTolerance>8.98315284119521e-009</XYTolerance>
+														<YOrigin>-400</YOrigin>
+														<ZOrigin>-100000</ZOrigin>
+														<ZScale>10000</ZScale>
+														<ZTolerance>0.001</ZTolerance>
+													</SpatialReference>
+												</GeometryDef>
+												<IsNullable>true</IsNullable>
+												<Length>4</Length>
+												<ModelName>shape</ModelName>
+												<Precision>0</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>gdb_428_codkpre</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>codkpre</Name>
+												<Type>esriFieldTypeString</Type>
+												<AliasName>Codigo Predio</AliasName>
+												<DomainFixed>false</DomainFixed>
+												<Editable>true</Editable>
+												<IsNullable>true</IsNullable>
+												<Length>16</Length>
+												<ModelName>codkpre</ModelName>
+												<Precision>0</Precision>
+												<Required>false</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>false</IsUnique>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>r44_sde_rowid_uk</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>objectid</Name>
+												<Type>esriFieldTypeOID</Type>
+												<AliasName>OBJECTID</AliasName>
+												<DomainFixed>true</DomainFixed>
+												<Editable>false</Editable>
+												<IsNullable>false</IsNullable>
+												<Length>4</Length>
+												<ModelName>objectid</ModelName>
+												<Precision>10</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+								</Index>
+							</IndexArray>
+						</Indexes>
+						<AliasName>Conectividad</AliasName>
+						<CLSID>{52353152-891A-11D0-BEC6-00805F7C4268}</CLSID>
+						<ShapeType>esriGeometryPolygon</ShapeType>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<RelationshipClassNames xsi:type="esri:Names">
+							<Name>gdb_moscal.sde.KPre_Conect</Name>
+						</RelationshipClassNames>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Extent xsi:type="esri:EnvelopeN">
+							<XMin>NaN</XMin>
+							<YMin>NaN</YMin>
+							<XMax>NaN</XMax>
+							<YMax>NaN</YMax>
+							<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+								<HighPrecision>true</HighPrecision>
+								<LeftLongitude>-180</LeftLongitude>
+								<MOrigin>-100000</MOrigin>
+								<MScale>10000</MScale>
+								<MTolerance>0.001</MTolerance>
+								<WKID>4686</WKID>
+								<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+								<XOrigin>-400</XOrigin>
+								<XYScale>999999999.99999988</XYScale>
+								<XYTolerance>8.98315284119521e-009</XYTolerance>
+								<YOrigin>-400</YOrigin>
+								<ZOrigin>-100000</ZOrigin>
+								<ZScale>10000</ZScale>
+								<ZTolerance>0.001</ZTolerance>
+							</SpatialReference>
+						</Extent>
+						<AreaFieldName>st_area(shape)</AreaFieldName>
+						<CanVersion>true</CanVersion>
+						<DSID>428</DSID>
+						<FeatureType>esriFTSimple</FeatureType>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<HasM>false</HasM>
+						<HasSpatialIndex>true</HasSpatialIndex>
+						<HasZ>false</HasZ>
+						<LengthFieldName>st_length(shape)</LengthFieldName>
+						<ModelName/>
+						<HasOID>true</HasOID>
+						<OIDFieldName>objectid</OIDFieldName>
+						<RasterFieldName/>
+						<ShapeFieldName>shape</ShapeFieldName>
+						<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+							<HighPrecision>true</HighPrecision>
+							<LeftLongitude>-180</LeftLongitude>
+							<MOrigin>-100000</MOrigin>
+							<MScale>10000</MScale>
+							<MTolerance>0.001</MTolerance>
+							<WKID>4686</WKID>
+							<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+							<XOrigin>-400</XOrigin>
+							<XYScale>999999999.99999988</XYScale>
+							<XYTolerance>8.98315284119521e-009</XYTolerance>
+							<YOrigin>-400</YOrigin>
+							<ZOrigin>-100000</ZOrigin>
+							<ZScale>10000</ZScale>
+							<ZTolerance>0.001</ZTolerance>
+						</SpatialReference>
+						<Versioned>false</Versioned>
+					</DataElement>
+					<DataElement xsi:type="esri:DEFeatureClass">
+						<CatalogPath>/FD=gdb_bpr.sde.IgacBase/FC=gdb_moscal.sde.Deforestacion</CatalogPath>
+						<Name>gdb_moscal.sde.Deforestacion</Name>
+						<DatasetType>esriDTFeatureClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField">
+								<Field xsi:type="esri:Field">
+									<Name>objectid</Name>
+									<Type>esriFieldTypeOID</Type>
+									<AliasName>OBJECTID</AliasName>
+									<DomainFixed>true</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>4</Length>
+									<ModelName>objectid</ModelName>
+									<Precision>10</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>shape</Name>
+									<Type>esriFieldTypeGeometry</Type>
+									<AliasName>SHAPE</AliasName>
+									<DomainFixed>true</DomainFixed>
+									<Editable>true</Editable>
+									<GeometryDef xsi:type="esri:GeometryDef">
+										<AvgNumPoints>0</AvgNumPoints>
+										<HasM>false</HasM>
+										<HasZ>false</HasZ>
+										<GridSize0>-2</GridSize0>
+										<GeometryType>esriGeometryPolygon</GeometryType>
+										<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+											<HighPrecision>true</HighPrecision>
+											<LeftLongitude>-180</LeftLongitude>
+											<MOrigin>-100000</MOrigin>
+											<MScale>10000</MScale>
+											<MTolerance>0.001</MTolerance>
+											<WKID>4686</WKID>
+											<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+											<XOrigin>-400</XOrigin>
+											<XYScale>999999999.99999988</XYScale>
+											<XYTolerance>8.98315284119521e-009</XYTolerance>
+											<YOrigin>-400</YOrigin>
+											<ZOrigin>-100000</ZOrigin>
+											<ZScale>10000</ZScale>
+											<ZTolerance>0.001</ZTolerance>
+										</SpatialReference>
+									</GeometryDef>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>shape</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>a_def_ha</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>Area Deforestada ha</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>areadeforestada</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>a_deg_ha</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>areaDegradada</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>areadegradada</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>a_frag_ha</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>areaFragmentada</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>areafragmentada</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>cod_aso</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Asociacion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>codnucle</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>cod_ver</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Vereda</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>11</Length>
+									<ModelName>codzonaest</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codkpre</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Predio</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>16</Length>
+									<ModelName>codpredio</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>fechaactu</Name>
+									<Type>esriFieldTypeDate</Type>
+									<AliasName>fechaActu</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>fechaactu</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>idcambnb</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Identificador Deforestacion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>id</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_area(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_area(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_length(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_length(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+							</FieldArray>
+						</Fields>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex">
+								<Index xsi:type="esri:Index">
+									<Name>a23_ix1</Name>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>shape</Name>
+												<Type>esriFieldTypeGeometry</Type>
+												<AliasName>SHAPE</AliasName>
+												<DomainFixed>true</DomainFixed>
+												<Editable>true</Editable>
+												<GeometryDef xsi:type="esri:GeometryDef">
+													<AvgNumPoints>0</AvgNumPoints>
+													<HasM>false</HasM>
+													<HasZ>false</HasZ>
+													<GridSize0>-2</GridSize0>
+													<GeometryType>esriGeometryPolygon</GeometryType>
+													<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+														<HighPrecision>true</HighPrecision>
+														<LeftLongitude>-180</LeftLongitude>
+														<MOrigin>-100000</MOrigin>
+														<MScale>10000</MScale>
+														<MTolerance>0.001</MTolerance>
+														<WKID>4686</WKID>
+														<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+														<XOrigin>-400</XOrigin>
+														<XYScale>999999999.99999988</XYScale>
+														<XYTolerance>8.98315284119521e-009</XYTolerance>
+														<YOrigin>-400</YOrigin>
+														<ZOrigin>-100000</ZOrigin>
+														<ZScale>10000</ZScale>
+														<ZTolerance>0.001</ZTolerance>
+													</SpatialReference>
+												</GeometryDef>
+												<IsNullable>true</IsNullable>
+												<Length>4</Length>
+												<ModelName>shape</ModelName>
+												<Precision>0</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>r31_sde_rowid_uk</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>objectid</Name>
+												<Type>esriFieldTypeOID</Type>
+												<AliasName>OBJECTID</AliasName>
+												<DomainFixed>true</DomainFixed>
+												<Editable>false</Editable>
+												<IsNullable>false</IsNullable>
+												<Length>4</Length>
+												<ModelName>objectid</ModelName>
+												<Precision>10</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+								</Index>
+							</IndexArray>
+						</Indexes>
+						<AliasName>CambiosBosque</AliasName>
+						<CLSID>{52353152-891A-11D0-BEC6-00805F7C4268}</CLSID>
+						<ShapeType>esriGeometryPolygon</ShapeType>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<RelationshipClassNames xsi:type="esri:Names"/>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Extent xsi:type="esri:EnvelopeN">
+							<XMin>NaN</XMin>
+							<YMin>NaN</YMin>
+							<XMax>NaN</XMax>
+							<YMax>NaN</YMax>
+							<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+								<HighPrecision>true</HighPrecision>
+								<LeftLongitude>-180</LeftLongitude>
+								<MOrigin>-100000</MOrigin>
+								<MScale>10000</MScale>
+								<MTolerance>0.001</MTolerance>
+								<WKID>4686</WKID>
+								<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+								<XOrigin>-400</XOrigin>
+								<XYScale>999999999.99999988</XYScale>
+								<XYTolerance>8.98315284119521e-009</XYTolerance>
+								<YOrigin>-400</YOrigin>
+								<ZOrigin>-100000</ZOrigin>
+								<ZScale>10000</ZScale>
+								<ZTolerance>0.001</ZTolerance>
+							</SpatialReference>
+						</Extent>
+						<AreaFieldName>st_area(shape)</AreaFieldName>
+						<CanVersion>true</CanVersion>
+						<DSID>34</DSID>
+						<FeatureType>esriFTSimple</FeatureType>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<HasM>false</HasM>
+						<HasSpatialIndex>true</HasSpatialIndex>
+						<HasZ>false</HasZ>
+						<LengthFieldName>st_length(shape)</LengthFieldName>
+						<ModelName/>
+						<HasOID>true</HasOID>
+						<OIDFieldName>objectid</OIDFieldName>
+						<RasterFieldName/>
+						<ShapeFieldName>shape</ShapeFieldName>
+						<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+							<HighPrecision>true</HighPrecision>
+							<LeftLongitude>-180</LeftLongitude>
+							<MOrigin>-100000</MOrigin>
+							<MScale>10000</MScale>
+							<MTolerance>0.001</MTolerance>
+							<WKID>4686</WKID>
+							<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+							<XOrigin>-400</XOrigin>
+							<XYScale>999999999.99999988</XYScale>
+							<XYTolerance>8.98315284119521e-009</XYTolerance>
+							<YOrigin>-400</YOrigin>
+							<ZOrigin>-100000</ZOrigin>
+							<ZScale>10000</ZScale>
+							<ZTolerance>0.001</ZTolerance>
+						</SpatialReference>
+						<Versioned>false</Versioned>
+					</DataElement>
+					<DataElement xsi:type="esri:DEFeatureClass">
+						<CatalogPath>/FD=gdb_bpr.sde.IgacBase/FC=gdb_moscal.sde.Fragmentacion</CatalogPath>
+						<Name>gdb_moscal.sde.Fragmentacion</Name>
+						<DatasetType>esriDTFeatureClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField">
+								<Field xsi:type="esri:Field">
+									<Name>objectid</Name>
+									<Type>esriFieldTypeOID</Type>
+									<AliasName>OBJECTID</AliasName>
+									<DomainFixed>true</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>4</Length>
+									<ModelName>objectid</ModelName>
+									<Precision>10</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>shape</Name>
+									<Type>esriFieldTypeGeometry</Type>
+									<AliasName/>
+									<DomainFixed>true</DomainFixed>
+									<Editable>true</Editable>
+									<GeometryDef xsi:type="esri:GeometryDef">
+										<AvgNumPoints>0</AvgNumPoints>
+										<HasM>false</HasM>
+										<HasZ>false</HasZ>
+										<GridSize0>-2</GridSize0>
+										<GeometryType>esriGeometryPolygon</GeometryType>
+										<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+											<HighPrecision>true</HighPrecision>
+											<LeftLongitude>-180</LeftLongitude>
+											<MOrigin>-100000</MOrigin>
+											<MScale>10000</MScale>
+											<MTolerance>0.001</MTolerance>
+											<WKID>4686</WKID>
+											<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+											<XOrigin>-400</XOrigin>
+											<XYScale>999999999.99999988</XYScale>
+											<XYTolerance>8.98315284119521e-009</XYTolerance>
+											<YOrigin>-400</YOrigin>
+											<ZOrigin>-100000</ZOrigin>
+											<ZScale>10000</ZScale>
+											<ZTolerance>0.001</ZTolerance>
+										</SpatialReference>
+									</GeometryDef>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName>shape</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>?</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>?</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>?</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>ca</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>CA</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>ca</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>codkpre</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo Predio</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>16</Length>
+									<ModelName>codkpre</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>core</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>CORE</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>core</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>dm</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>DM</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>dm</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>ed</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>ED</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>ed</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>edcon</Name>
+									<Type>esriFieldTypeSmallInteger</Type>
+									<AliasName>EDCON</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>2</Length>
+									<ModelName>edcon</ModelName>
+									<Precision>5</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>fechaactu</Name>
+									<Type>esriFieldTypeDate</Type>
+									<AliasName>Fecha Actualizacion</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>fechaactu</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>frac</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>FRAC</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>frac</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>gdb_moscal.sde.Fragmentacion.area</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName/>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>idfrag</Name>
+									<Type>esriFieldTypeString</Type>
+									<AliasName>Codigo fragmento</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>25</Length>
+									<ModelName>idfrag</ModelName>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>nn_min</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName>NN_MIN</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>8</Length>
+									<ModelName>nn_min</ModelName>
+									<Precision>38</Precision>
+									<Required>false</Required>
+									<Scale>8</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>np</Name>
+									<Type>esriFieldTypeSmallInteger</Type>
+									<AliasName>NP</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>2</Length>
+									<ModelName>np</ModelName>
+									<Precision>5</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_area(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_area(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
+									<Name>st_length(shape)</Name>
+									<Type>esriFieldTypeDouble</Type>
+									<AliasName/>
+									<DomainFixed>false</DomainFixed>
+									<Editable>false</Editable>
+									<IsNullable>false</IsNullable>
+									<Length>0</Length>
+									<ModelName>st_length(shape)</ModelName>
+									<Precision>0</Precision>
+									<Required>true</Required>
+									<Scale>0</Scale>
+								</Field>
+							</FieldArray>
+						</Fields>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex">
+								<Index xsi:type="esri:Index">
+									<Name>a32_ix1</Name>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>shape</Name>
+												<Type>esriFieldTypeGeometry</Type>
+												<AliasName/>
+												<DomainFixed>true</DomainFixed>
+												<Editable>true</Editable>
+												<GeometryDef xsi:type="esri:GeometryDef">
+													<AvgNumPoints>0</AvgNumPoints>
+													<HasM>false</HasM>
+													<HasZ>false</HasZ>
+													<GridSize0>-2</GridSize0>
+													<GeometryType>esriGeometryPolygon</GeometryType>
+													<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+														<HighPrecision>true</HighPrecision>
+														<LeftLongitude>-180</LeftLongitude>
+														<MOrigin>-100000</MOrigin>
+														<MScale>10000</MScale>
+														<MTolerance>0.001</MTolerance>
+														<WKID>4686</WKID>
+														<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+														<XOrigin>-400</XOrigin>
+														<XYScale>999999999.99999988</XYScale>
+														<XYTolerance>8.98315284119521e-009</XYTolerance>
+														<YOrigin>-400</YOrigin>
+														<ZOrigin>-100000</ZOrigin>
+														<ZScale>10000</ZScale>
+														<ZTolerance>0.001</ZTolerance>
+													</SpatialReference>
+												</GeometryDef>
+												<IsNullable>true</IsNullable>
+												<Length>4</Length>
+												<ModelName>shape</ModelName>
+												<Precision>0</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+								</Index>
+								<Index xsi:type="esri:Index">
+									<Name>r43_sde_rowid_uk</Name>
+									<Fields xsi:type="esri:Fields">
+										<FieldArray xsi:type="esri:ArrayOfField">
+											<Field xsi:type="esri:Field">
+												<Name>objectid</Name>
+												<Type>esriFieldTypeOID</Type>
+												<AliasName>OBJECTID</AliasName>
+												<DomainFixed>true</DomainFixed>
+												<Editable>false</Editable>
+												<IsNullable>false</IsNullable>
+												<Length>4</Length>
+												<ModelName>objectid</ModelName>
+												<Precision>10</Precision>
+												<Required>true</Required>
+												<Scale>0</Scale>
+											</Field>
+										</FieldArray>
+									</Fields>
+									<IsAscending>true</IsAscending>
+									<IsUnique>true</IsUnique>
+								</Index>
+							</IndexArray>
+						</Indexes>
+						<AliasName>Fragmentacion</AliasName>
+						<CLSID>{52353152-891A-11D0-BEC6-00805F7C4268}</CLSID>
+						<ShapeType>esriGeometryPolygon</ShapeType>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<RelationshipClassNames xsi:type="esri:Names"/>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Extent xsi:type="esri:EnvelopeN">
+							<XMin>NaN</XMin>
+							<YMin>NaN</YMin>
+							<XMax>NaN</XMax>
+							<YMax>NaN</YMax>
+							<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+								<HighPrecision>true</HighPrecision>
+								<LeftLongitude>-180</LeftLongitude>
+								<MOrigin>-100000</MOrigin>
+								<MScale>10000</MScale>
+								<MTolerance>0.001</MTolerance>
+								<WKID>4686</WKID>
+								<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+								<XOrigin>-400</XOrigin>
+								<XYScale>999999999.99999988</XYScale>
+								<XYTolerance>8.98315284119521e-009</XYTolerance>
+								<YOrigin>-400</YOrigin>
+								<ZOrigin>-100000</ZOrigin>
+								<ZScale>10000</ZScale>
+								<ZTolerance>0.001</ZTolerance>
+							</SpatialReference>
+						</Extent>
+						<AreaFieldName>st_area(shape)</AreaFieldName>
+						<CanVersion>true</CanVersion>
+						<DSID>427</DSID>
+						<FeatureType>esriFTSimple</FeatureType>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<HasM>false</HasM>
+						<HasSpatialIndex>true</HasSpatialIndex>
+						<HasZ>false</HasZ>
+						<LengthFieldName>st_length(shape)</LengthFieldName>
+						<ModelName/>
+						<HasOID>true</HasOID>
+						<OIDFieldName>objectid</OIDFieldName>
+						<RasterFieldName/>
+						<ShapeFieldName>shape</ShapeFieldName>
+						<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+							<HighPrecision>true</HighPrecision>
+							<LeftLongitude>-180</LeftLongitude>
+							<MOrigin>-100000</MOrigin>
+							<MScale>10000</MScale>
+							<MTolerance>0.001</MTolerance>
+							<WKID>4686</WKID>
+							<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+							<XOrigin>-400</XOrigin>
+							<XYScale>999999999.99999988</XYScale>
+							<XYTolerance>8.98315284119521e-009</XYTolerance>
+							<YOrigin>-400</YOrigin>
+							<ZOrigin>-100000</ZOrigin>
+							<ZScale>10000</ZScale>
+							<ZTolerance>0.001</ZTolerance>
+						</SpatialReference>
+						<Versioned>false</Versioned>
+					</DataElement>
+					<DataElement xsi:type="esri:DERelationshipClass">
+						<CatalogPath>/FD=gdb_bpr.sde.IgacBase/RC=gdb_moscal.sde.KPre_Conect</CatalogPath>
+						<Name>gdb_moscal.sde.KPre_Conect</Name>
+						<AliasName/>
+						<DatasetType>esriDTRelationshipClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField"/>
+						</Fields>
+						<IsAttributed>false</IsAttributed>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex"/>
+						</Indexes>
+						<RelationshipClassNames xsi:type="esri:Names"/>
+						<CLSID/>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Cardinality>esriRelCardinalityOneToMany</Cardinality>
+						<ForwardPathLabel>Conectividad</ForwardPathLabel>
+						<BackwardPathLabel>KPre2017</BackwardPathLabel>
+						<OriginClassNames xsi:type="esri:Names">
+							<Name>gdb_bpr.sde.Construccion</Name>
+						</OriginClassNames>
+						<DestinationClassNames xsi:type="esri:Names">
+							<Name>gdb_moscal.sde.Conectividad</Name>
+						</DestinationClassNames>
+						<OriginClassKeys xsi:type="esri:ArrayOfRelationshipClassKey">
+							<RelationshipClassKey xsi:type="esri:RelationshipClassKey">
+								<ObjectKeyName>codkpre</ObjectKeyName>
+								<ClassKeyName/>
+								<KeyRole>esriRelKeyRoleOriginForeign</KeyRole>
+							</RelationshipClassKey>
+							<RelationshipClassKey xsi:type="esri:RelationshipClassKey">
+								<ObjectKeyName>cod</ObjectKeyName>
+								<ClassKeyName/>
+								<KeyRole>esriRelKeyRoleOriginPrimary</KeyRole>
+							</RelationshipClassKey>
+						</OriginClassKeys>
+						<DSID>-1</DSID>
+						<ModelName/>
+						<Notification>esriRelNotificationNone</Notification>
+						<RasterFieldName/>
+						<KeyType>esriRelKeyTypeSingle</KeyType>
+						<OIDFieldName>OBJECTID</OIDFieldName>
+						<HasOID>true</HasOID>
+						<Versioned>false</Versioned>
+						<IsReflexive>false</IsReflexive>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<CanVersion>true</CanVersion>
+						<ClassKey>esriRelClassKeyUndefined</ClassKey>
+						<IsComposite>false</IsComposite>
+						<RelationshipRules xsi:type="esri:ArrayOfRelationshipRule"/>
+					</DataElement>
+					<DataElement xsi:type="esri:DERelationshipClass">
+						<CatalogPath>/FD=gdb_bpr.sde.IgacBase/RC=gdb_moscal.sde.KPre_Cob</CatalogPath>
+						<Name>gdb_moscal.sde.KPre_Cob</Name>
+						<AliasName/>
+						<DatasetType>esriDTRelationshipClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField"/>
+						</Fields>
+						<IsAttributed>false</IsAttributed>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex"/>
+						</Indexes>
+						<RelationshipClassNames xsi:type="esri:Names"/>
+						<CLSID/>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Cardinality>esriRelCardinalityOneToMany</Cardinality>
+						<ForwardPathLabel>Cobertura</ForwardPathLabel>
+						<BackwardPathLabel>KPre2017</BackwardPathLabel>
+						<OriginClassNames xsi:type="esri:Names">
+							<Name>gdb_bpr.sde.Construccion</Name>
+						</OriginClassNames>
+						<DestinationClassNames xsi:type="esri:Names">
+							<Name>gdb_moscal.sde.Cobertura</Name>
+						</DestinationClassNames>
+						<OriginClassKeys xsi:type="esri:ArrayOfRelationshipClassKey">
+							<RelationshipClassKey xsi:type="esri:RelationshipClassKey">
+								<ObjectKeyName>codkpre</ObjectKeyName>
+								<ClassKeyName/>
+								<KeyRole>esriRelKeyRoleOriginForeign</KeyRole>
+							</RelationshipClassKey>
+							<RelationshipClassKey xsi:type="esri:RelationshipClassKey">
+								<ObjectKeyName>cod</ObjectKeyName>
+								<ClassKeyName/>
+								<KeyRole>esriRelKeyRoleOriginPrimary</KeyRole>
+							</RelationshipClassKey>
+						</OriginClassKeys>
+						<DSID>-1</DSID>
+						<ModelName/>
+						<Notification>esriRelNotificationNone</Notification>
+						<RasterFieldName/>
+						<KeyType>esriRelKeyTypeSingle</KeyType>
+						<OIDFieldName>OBJECTID</OIDFieldName>
+						<HasOID>true</HasOID>
+						<Versioned>false</Versioned>
+						<IsReflexive>false</IsReflexive>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<CanVersion>true</CanVersion>
+						<ClassKey>esriRelClassKeyUndefined</ClassKey>
+						<IsComposite>false</IsComposite>
+						<RelationshipRules xsi:type="esri:ArrayOfRelationshipRule"/>
+					</DataElement>
+					<DataElement xsi:type="esri:DERelationshipClass">
+						<CatalogPath>/FD=gdb_bpr.sde.IgacBase/RC=gdb_moscal.sde.KPre_BNB</CatalogPath>
+						<Name>gdb_moscal.sde.KPre_BNB</Name>
+						<AliasName/>
+						<DatasetType>esriDTRelationshipClass</DatasetType>
+						<Fields xsi:type="esri:Fields">
+							<FieldArray xsi:type="esri:ArrayOfField"/>
+						</Fields>
+						<IsAttributed>false</IsAttributed>
+						<Indexes xsi:type="esri:Indexes">
+							<IndexArray xsi:type="esri:ArrayOfIndex"/>
+						</Indexes>
+						<RelationshipClassNames xsi:type="esri:Names"/>
+						<CLSID/>
+						<EXTCLSID/>
+						<ExtensionProperties xsi:type="esri:PropertySet">
+							<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+						</ExtensionProperties>
+						<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+						<Cardinality>esriRelCardinalityOneToMany</Cardinality>
+						<ForwardPathLabel>Bosque_NoBosque</ForwardPathLabel>
+						<BackwardPathLabel>KPre2017</BackwardPathLabel>
+						<OriginClassNames xsi:type="esri:Names">
+							<Name>gdb_bpr.sde.Construccion</Name>
+						</OriginClassNames>
+						<DestinationClassNames xsi:type="esri:Names">
+							<Name>gdb_moscal.sde.Bosque_NoBosque</Name>
+						</DestinationClassNames>
+						<OriginClassKeys xsi:type="esri:ArrayOfRelationshipClassKey">
+							<RelationshipClassKey xsi:type="esri:RelationshipClassKey">
+								<ObjectKeyName>codkpre</ObjectKeyName>
+								<ClassKeyName/>
+								<KeyRole>esriRelKeyRoleOriginForeign</KeyRole>
+							</RelationshipClassKey>
+							<RelationshipClassKey xsi:type="esri:RelationshipClassKey">
+								<ObjectKeyName>cod</ObjectKeyName>
+								<ClassKeyName/>
+								<KeyRole>esriRelKeyRoleOriginPrimary</KeyRole>
+							</RelationshipClassKey>
+						</OriginClassKeys>
+						<DSID>-1</DSID>
+						<ModelName/>
+						<Notification>esriRelNotificationNone</Notification>
+						<RasterFieldName/>
+						<KeyType>esriRelKeyTypeSingle</KeyType>
+						<OIDFieldName>OBJECTID</OIDFieldName>
+						<HasOID>true</HasOID>
+						<Versioned>false</Versioned>
+						<IsReflexive>false</IsReflexive>
+						<GlobalIDFieldName/>
+						<HasGlobalID>false</HasGlobalID>
+						<CanVersion>true</CanVersion>
+						<ClassKey>esriRelClassKeyUndefined</ClassKey>
+						<IsComposite>false</IsComposite>
+						<RelationshipRules xsi:type="esri:ArrayOfRelationshipRule"/>
+					</DataElement>
+				</Children>
+				<Extent xsi:type="esri:EnvelopeN">
+					<XMin>NaN</XMin>
+					<YMin>NaN</YMin>
+					<XMax>NaN</XMax>
+					<YMax>NaN</YMax>
+					<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+						<HighPrecision>true</HighPrecision>
+						<LeftLongitude>-180</LeftLongitude>
+						<MOrigin>-100000</MOrigin>
+						<MScale>10000</MScale>
+						<MTolerance>0.001</MTolerance>
+						<WKID>4686</WKID>
+						<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+						<XOrigin>-400</XOrigin>
+						<XYScale>999999999.99999988</XYScale>
+						<XYTolerance>8.98315284119521e-009</XYTolerance>
+						<YOrigin>-400</YOrigin>
+						<ZOrigin>-100000</ZOrigin>
+						<ZScale>10000</ZScale>
+						<ZTolerance>0.001</ZTolerance>
+					</SpatialReference>
+				</Extent>
+				<CanVersion>true</CanVersion>
+				<DSID>32</DSID>
+				<SpatialReference xsi:type="esri:GeographicCoordinateSystem">
+					<HighPrecision>true</HighPrecision>
+					<LeftLongitude>-180</LeftLongitude>
+					<MOrigin>-100000</MOrigin>
+					<MScale>10000</MScale>
+					<MTolerance>0.001</MTolerance>
+					<WKID>4686</WKID>
+					<WKT>GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4686]]</WKT>
+					<XOrigin>-400</XOrigin>
+					<XYScale>999999999.99999988</XYScale>
+					<XYTolerance>8.98315284119521e-009</XYTolerance>
+					<YOrigin>-400</YOrigin>
+					<ZOrigin>-100000</ZOrigin>
+					<ZScale>10000</ZScale>
+					<ZTolerance>0.001</ZTolerance>
+				</SpatialReference>
+				<Versioned>false</Versioned>
+			</DataElement>
+			<DataElement xsi:type="esri:DETable">
+				<CatalogPath>/OC=gdb_bpr.sde.DivisionGeografica</CatalogPath>
+				<Name>gdb_bpr.sde.DivisionGeografica</Name>
+				<DatasetType>esriDTTable</DatasetType>
+				<EXTCLSID/>
+				<Fields xsi:type="esri:Fields">
+					<FieldArray xsi:type="esri:ArrayOfField">
+						<Field xsi:type="esri:Field">
+							<Name>objectid</Name>
+							<Type>esriFieldTypeOID</Type>
+							<AliasName>OBJECTID</AliasName>
+							<DomainFixed>true</DomainFixed>
+							<Editable>false</Editable>
+							<IsNullable>false</IsNullable>
+							<Length>4</Length>
+							<ModelName>objectid</ModelName>
+							<Precision>10</Precision>
+							<Required>true</Required>
+							<Scale>0</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>a_manz</Name>
+							<Type>esriFieldTypeDouble</Type>
+							<AliasName>A_Manz</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>8</Length>
+							<ModelName>a_def_ha</ModelName>
+							<Precision>38</Precision>
+							<Required>false</Required>
+							<Scale>8</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>cod_ag</Name>
+							<Type>esriFieldTypeString</Type>
+							<AliasName>codKPre</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>16</Length>
+							<ModelName>codkpre</ModelName>
+							<Precision>0</Precision>
+							<Required>false</Required>
+							<Scale>0</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>fechaactu</Name>
+							<Type>esriFieldTypeDate</Type>
+							<AliasName>fechaActu</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>8</Length>
+							<ModelName>fechaactu</ModelName>
+							<Precision>0</Precision>
+							<Required>false</Required>
+							<Scale>0</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>indMasc</Name>
+							<Type>esriFieldTypeDouble</Type>
+							<AliasName>PrecBosha</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>8</Length>
+							<ModelName>precbosha</ModelName>
+							<Precision>38</Precision>
+							<Required>false</Required>
+							<Scale>8</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>indNat</Name>
+							<Type>esriFieldTypeDouble</Type>
+							<AliasName>PrecPastha</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>8</Length>
+							<ModelName>precpastha</ModelName>
+							<Precision>38</Precision>
+							<Required>false</Required>
+							<Scale>8</Scale>
+						</Field>
+					</FieldArray>
+				</Fields>
+				<Indexes xsi:type="esri:Indexes">
+					<IndexArray xsi:type="esri:ArrayOfIndex">
+						<Index xsi:type="esri:Index">
+							<Name>gdb_435_codkpre</Name>
+							<Fields xsi:type="esri:Fields">
+								<FieldArray xsi:type="esri:ArrayOfField">
+									<Field xsi:type="esri:Field">
+										<Name>cod_ag</Name>
+										<Type>esriFieldTypeString</Type>
+										<AliasName>codKPre</AliasName>
+										<DomainFixed>false</DomainFixed>
+										<Editable>true</Editable>
+										<IsNullable>true</IsNullable>
+										<Length>16</Length>
+										<ModelName>codkpre</ModelName>
+										<Precision>0</Precision>
+										<Required>false</Required>
+										<Scale>0</Scale>
+									</Field>
+								</FieldArray>
+							</Fields>
+							<IsAscending>true</IsAscending>
+							<IsUnique>false</IsUnique>
+						</Index>
+						<Index xsi:type="esri:Index">
+							<Name>r50_sde_rowid_uk</Name>
+							<Fields xsi:type="esri:Fields">
+								<FieldArray xsi:type="esri:ArrayOfField">
+									<Field xsi:type="esri:Field">
+										<Name>objectid</Name>
+										<Type>esriFieldTypeOID</Type>
+										<AliasName>OBJECTID</AliasName>
+										<DomainFixed>true</DomainFixed>
+										<Editable>false</Editable>
+										<IsNullable>false</IsNullable>
+										<Length>4</Length>
+										<ModelName>objectid</ModelName>
+										<Precision>10</Precision>
+										<Required>true</Required>
+										<Scale>0</Scale>
+									</Field>
+								</FieldArray>
+							</Fields>
+							<IsAscending>true</IsAscending>
+							<IsUnique>true</IsUnique>
+						</Index>
+					</IndexArray>
+				</Indexes>
+				<AliasName>Precio Bosque Pastos</AliasName>
+				<CLSID>{7A566981-C114-11D2-8A28-006097AFF44E}</CLSID>
+				<ExtensionProperties xsi:type="esri:PropertySet">
+					<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+				</ExtensionProperties>
+				<RelationshipClassNames xsi:type="esri:Names">
+					<Name>gdb_bpr.sde.Manz_agPob</Name>
+				</RelationshipClassNames>
+				<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+				<CanVersion>true</CanVersion>
+				<DSID>435</DSID>
+				<GlobalIDFieldName/>
+				<HasGlobalID>false</HasGlobalID>
+				<ModelName/>
+				<HasOID>true</HasOID>
+				<OIDFieldName>objectid</OIDFieldName>
+				<RasterFieldName/>
+				<Versioned>false</Versioned>
+			</DataElement>
+			<DataElement xsi:type="esri:DETable">
+				<CatalogPath>/OC=gdb_bpr.sde.consCaracteristicas</CatalogPath>
+				<Name>gdb_bpr.sde.consCaracteristicas</Name>
+				<DatasetType>esriDTTable</DatasetType>
+				<EXTCLSID/>
+				<Fields xsi:type="esri:Fields">
+					<FieldArray xsi:type="esri:ArrayOfField">
+						<Field xsi:type="esri:Field">
+							<Name>objectid</Name>
+							<Type>esriFieldTypeOID</Type>
+							<AliasName>OBJECTID</AliasName>
+							<DomainFixed>true</DomainFixed>
+							<Editable>false</Editable>
+							<IsNullable>false</IsNullable>
+							<Length>4</Length>
+							<ModelName>objectid</ModelName>
+							<Precision>10</Precision>
+							<Required>true</Required>
+							<Scale>0</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>a_Const</Name>
+							<Type>esriFieldTypeDouble</Type>
+							<AliasName>A_Bosq_ha</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>8</Length>
+							<ModelName>a_bosq_ha</ModelName>
+							<Precision>38</Precision>
+							<Required>false</Required>
+							<Scale>8</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>a_Priv</Name>
+							<Type>esriFieldTypeDouble</Type>
+							<AliasName>A_Def_ha</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>8</Length>
+							<ModelName>a_def_ha</ModelName>
+							<Precision>38</Precision>
+							<Required>false</Required>
+							<Scale>8</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>cantuaf</Name>
+							<Type>esriFieldTypeDouble</Type>
+							<AliasName>CantUAF</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>8</Length>
+							<ModelName>cantuaf</ModelName>
+							<Precision>38</Precision>
+							<Required>false</Required>
+							<Scale>8</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>codkpre</Name>
+							<Type>esriFieldTypeString</Type>
+							<AliasName>codKPre</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>16</Length>
+							<ModelName>codkpre</ModelName>
+							<Precision>0</Precision>
+							<Required>false</Required>
+							<Scale>0</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>fechaactu</Name>
+							<Type>esriFieldTypeDate</Type>
+							<AliasName>fechaActu</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>8</Length>
+							<ModelName>fechaactu</ModelName>
+							<Precision>0</Precision>
+							<Required>false</Required>
+							<Scale>0</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>prec_m2</Name>
+							<Type>esriFieldTypeString</Type>
+							<AliasName>idTamDef</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>25</Length>
+							<ModelName>idtamdef</ModelName>
+							<Precision>0</Precision>
+							<Required>false</Required>
+							<Scale>0</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>puntaje</Name>
+							<Type>esriFieldTypeDouble</Type>
+							<AliasName>Puntaje</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>8</Length>
+							<ModelName>a_pred_ha</ModelName>
+							<Precision>38</Precision>
+							<Required>false</Required>
+							<Scale>8</Scale>
+						</Field>
+					</FieldArray>
+				</Fields>
+				<Indexes xsi:type="esri:Indexes">
+					<IndexArray xsi:type="esri:ArrayOfIndex">
+						<Index xsi:type="esri:Index">
+							<Name>gdb_436_codkpre</Name>
+							<Fields xsi:type="esri:Fields">
+								<FieldArray xsi:type="esri:ArrayOfField">
+									<Field xsi:type="esri:Field">
+										<Name>codkpre</Name>
+										<Type>esriFieldTypeString</Type>
+										<AliasName>codKPre</AliasName>
+										<DomainFixed>false</DomainFixed>
+										<Editable>true</Editable>
+										<IsNullable>true</IsNullable>
+										<Length>16</Length>
+										<ModelName>codkpre</ModelName>
+										<Precision>0</Precision>
+										<Required>false</Required>
+										<Scale>0</Scale>
+									</Field>
+								</FieldArray>
+							</Fields>
+							<IsAscending>true</IsAscending>
+							<IsUnique>false</IsUnique>
+						</Index>
+						<Index xsi:type="esri:Index">
+							<Name>r51_sde_rowid_uk</Name>
+							<Fields xsi:type="esri:Fields">
+								<FieldArray xsi:type="esri:ArrayOfField">
+									<Field xsi:type="esri:Field">
+										<Name>objectid</Name>
+										<Type>esriFieldTypeOID</Type>
+										<AliasName>OBJECTID</AliasName>
+										<DomainFixed>true</DomainFixed>
+										<Editable>false</Editable>
+										<IsNullable>false</IsNullable>
+										<Length>4</Length>
+										<ModelName>objectid</ModelName>
+										<Precision>10</Precision>
+										<Required>true</Required>
+										<Scale>0</Scale>
+									</Field>
+								</FieldArray>
+							</Fields>
+							<IsAscending>true</IsAscending>
+							<IsUnique>true</IsUnique>
+						</Index>
+					</IndexArray>
+				</Indexes>
+				<AliasName>Tamaño Deforestacion Predio</AliasName>
+				<CLSID>{7A566981-C114-11D2-8A28-006097AFF44E}</CLSID>
+				<ExtensionProperties xsi:type="esri:PropertySet">
+					<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+				</ExtensionProperties>
+				<RelationshipClassNames xsi:type="esri:Names">
+					<Name>gdb_moscal.sde.KPre_Def</Name>
+				</RelationshipClassNames>
+				<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+				<CanVersion>true</CanVersion>
+				<DSID>436</DSID>
+				<GlobalIDFieldName/>
+				<HasGlobalID>false</HasGlobalID>
+				<ModelName/>
+				<HasOID>true</HasOID>
+				<OIDFieldName>objectid</OIDFieldName>
+				<RasterFieldName/>
+				<Versioned>false</Versioned>
+			</DataElement>
+			<DataElement xsi:type="esri:DETable">
+				<CatalogPath>/OC=gdb_bpr.sde.infoPredio</CatalogPath>
+				<Name>gdb_bpr.sde.infoPredio</Name>
+				<DatasetType>esriDTTable</DatasetType>
+				<EXTCLSID/>
+				<Fields xsi:type="esri:Fields">
+					<FieldArray xsi:type="esri:ArrayOfField">
+						<Field xsi:type="esri:Field">
+							<Name>objectid</Name>
+							<Type>esriFieldTypeOID</Type>
+							<AliasName>OBJECTID</AliasName>
+							<DomainFixed>true</DomainFixed>
+							<Editable>false</Editable>
+							<IsNullable>false</IsNullable>
+							<Length>4</Length>
+							<ModelName>objectid</ModelName>
+							<Precision>10</Precision>
+							<Required>true</Required>
+							<Scale>0</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>codkpre</Name>
+							<Type>esriFieldTypeString</Type>
+							<AliasName>CodKPre</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>16</Length>
+							<ModelName>codkpre</ModelName>
+							<Precision>0</Precision>
+							<Required>false</Required>
+							<Scale>0</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>fechaactu</Name>
+							<Type>esriFieldTypeDate</Type>
+							<AliasName>FechaActu</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>8</Length>
+							<ModelName>fechaactu</ModelName>
+							<Precision>0</Precision>
+							<Required>false</Required>
+							<Scale>0</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>idprop</Name>
+							<Type>esriFieldTypeInteger</Type>
+							<AliasName>idProp</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>4</Length>
+							<ModelName>idprop</ModelName>
+							<Precision>10</Precision>
+							<Required>false</Required>
+							<Scale>0</Scale>
+						</Field>
+						<Field xsi:type="esri:Field">
+							<Name>tipodoc</Name>
+							<Type>esriFieldTypeString</Type>
+							<Domain xsi:type="esri:CodedValueDomain">
+								<DomainName>ClaseTipoDoc</DomainName>
+								<CodedValues xsi:type="esri:ArrayOfCodedValue">
+									<CodedValue xsi:type="esri:CodedValue">
+										<Name>Cedula de Ciudadania</Name>
+										<Code xsi:type="xs:string">cc</Code>
+									</CodedValue>
+									<CodedValue xsi:type="esri:CodedValue">
+										<Name>Cedula de Extranjeria</Name>
+										<Code xsi:type="xs:string">ce</Code>
+									</CodedValue>
+									<CodedValue xsi:type="esri:CodedValue">
+										<Name>NIT</Name>
+										<Code xsi:type="xs:string">nit</Code>
+									</CodedValue>
+									<CodedValue xsi:type="esri:CodedValue">
+										<Name>Tarjeta de Identidad</Name>
+										<Code xsi:type="xs:string">ti</Code>
+									</CodedValue>
+								</CodedValues>
+								<Description>Clase para tipos de documento</Description>
+								<FieldType>esriFieldTypeString</FieldType>
+								<MergePolicy>esriMPTDefaultValue</MergePolicy>
+								<SplitPolicy>esriSPTDefaultValue</SplitPolicy>
+							</Domain>
+							<AliasName>TipoDoc</AliasName>
+							<DomainFixed>false</DomainFixed>
+							<Editable>true</Editable>
+							<IsNullable>true</IsNullable>
+							<Length>50</Length>
+							<ModelName>tipodoc</ModelName>
+							<Precision>0</Precision>
+							<Required>false</Required>
+							<Scale>0</Scale>
+						</Field>
+					</FieldArray>
+				</Fields>
+				<Indexes xsi:type="esri:Indexes">
+					<IndexArray xsi:type="esri:ArrayOfIndex">
+						<Index xsi:type="esri:Index">
+							<Name>gdb_421_codkpre</Name>
+							<Fields xsi:type="esri:Fields">
+								<FieldArray xsi:type="esri:ArrayOfField">
+									<Field xsi:type="esri:Field">
+										<Name>codkpre</Name>
+										<Type>esriFieldTypeString</Type>
+										<AliasName>CodKPre</AliasName>
+										<DomainFixed>false</DomainFixed>
+										<Editable>true</Editable>
+										<IsNullable>true</IsNullable>
+										<Length>16</Length>
+										<ModelName>codkpre</ModelName>
+										<Precision>0</Precision>
+										<Required>false</Required>
+										<Scale>0</Scale>
+									</Field>
+								</FieldArray>
+							</Fields>
+							<IsAscending>true</IsAscending>
+							<IsUnique>false</IsUnique>
+						</Index>
+						<Index xsi:type="esri:Index">
+							<Name>r38_sde_rowid_uk</Name>
+							<Fields xsi:type="esri:Fields">
+								<FieldArray xsi:type="esri:ArrayOfField">
+									<Field xsi:type="esri:Field">
+										<Name>objectid</Name>
+										<Type>esriFieldTypeOID</Type>
+										<AliasName>OBJECTID</AliasName>
+										<DomainFixed>true</DomainFixed>
+										<Editable>false</Editable>
+										<IsNullable>false</IsNullable>
+										<Length>4</Length>
+										<ModelName>objectid</ModelName>
+										<Precision>10</Precision>
+										<Required>true</Required>
+										<Scale>0</Scale>
+									</Field>
+								</FieldArray>
+							</Fields>
+							<IsAscending>true</IsAscending>
+							<IsUnique>true</IsUnique>
+						</Index>
+					</IndexArray>
+				</Indexes>
+				<AliasName>Propietario</AliasName>
+				<CLSID>{7A566981-C114-11D2-8A28-006097AFF44E}</CLSID>
+				<ExtensionProperties xsi:type="esri:PropertySet">
+					<PropertyArray xsi:type="esri:ArrayOfPropertySetProperty"/>
+				</ExtensionProperties>
+				<RelationshipClassNames xsi:type="esri:Names">
+					<Name>gdb_bpr.sde.Pred_infoPred</Name>
+				</RelationshipClassNames>
+				<ControllerMemberships xsi:type="esri:ArrayOfControllerMembership"/>
+				<CanVersion>true</CanVersion>
+				<DSID>421</DSID>
+				<GlobalIDFieldName/>
+				<HasGlobalID>false</HasGlobalID>
+				<ModelName/>
+				<HasOID>true</HasOID>
+				<OIDFieldName>objectid</OIDFieldName>
+				<RasterFieldName/>
+				<Versioned>false</Versioned>
+			</DataElement>
+		</DatasetDefinitions>
+	</WorkspaceDefinition>
+	<WorkspaceData xsi:type="esri:WorkspaceData"/>
+</esri:Workspace>
