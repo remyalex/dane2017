@@ -827,6 +827,19 @@
 									<Scale>0</Scale>
 								</Field>
 								<Field xsi:type="esri:Field">
+									<Name>puntaje</Name>
+									<Type>esriFieldTypeInteger</Type>
+									<AliasName>Puntaje Construcciones</AliasName>
+									<DomainFixed>false</DomainFixed>
+									<Editable>true</Editable>
+									<IsNullable>true</IsNullable>
+									<Length>4</Length>
+									<ModelName/>
+									<Precision>0</Precision>
+									<Required>false</Required>
+									<Scale>0</Scale>
+								</Field>
+								<Field xsi:type="esri:Field">
 									<Name>st_area(shape)</Name>
 									<Type>esriFieldTypeDouble</Type>
 									<AliasName/>
